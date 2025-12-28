@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title data-i18n="page.title">Projects - Digital Support</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" />
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/Features-Blue.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+  <link rel="stylesheet" href="assets/css/Projects-Horizontal.css" />
+  <link rel="stylesheet" href="assets/css/Team-Boxed.css" />
+  <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
+  <link rel="stylesheet" href="assets/css/preloader.css">
+  <link rel="stylesheet" href="styles.css" />
+  
+  <style>
+    /* Projects page specific styling */
+    .project-hero {
+      background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+      color: white;
+      padding: 100px 0 60px;
+      margin-bottom: 40px;
+    }
+    
+    .project-card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+    }
+    
+    .project-card img {
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+    
+    .project-category {
+      background: #e7f6fd;
+      color: #0d6efd;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    
+    .project-stats {
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+      margin-top: 15px;
+    }
+    
+    .stat-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    
+    .stat-item i {
+      color: #0dcaf0;
+      margin-right: 8px;
+      width: 20px;
+    }
+    
+    .project-link {
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    
+    .project-link:hover {
+      color: #0dcaf0;
+    }
+    
+    .section-subtitle {
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <div class="container">
+      <!-- Desktop Contact + Brand in one row -->
+      <div class="">
+        <!-- Brand -->
+        <a class="navbar-brand logo me-3" href="#" data-i18n="nav.brand">Digital Support</a>
+
+        <!-- Desktop Contact Info -->
+        <div class="contact-info d-none d-lg-flex ms-auto me-4">
+          <a href="tel:+201234567890" class="contact-item me-3">
+            <i class="fa fa-phone"></i>
+            <span class="contact-text d-none d-xl-inline">+20 123 456 7890</span>
+          </a>
+          <a href="mailto:info@digitalsupport.com" class="contact-item me-3">
+            <i class="fa fa-envelope"></i>
+            <span class="contact-text d-none d-xl-inline">info@digitalsupport.com</span>
+          </a>
+          <a href="https://www.google.com/maps?q=30.044420,31.235712&z=15" target="_blank" class="contact-item">
+            <i class="fa fa-map-marker"></i>
+            <span class="contact-text d-none d-xl-inline" data-i18n="nav.location">Cairo, Egypt</span>
+          </a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button data-bs-toggle="collapse" class="navbar-toggler ms-auto" data-bs-target="#navcol-1">
+          <span class="visually-hidden" data-i18n="nav.toggle">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Collapsible Content -->
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <!-- Mobile Contact Info -->
+        <div class="mobile-contact d-lg-none mb-3 p-3 bg-light rounded">
+          <div class="contact-info flex-column">
+            <a href="tel:+201234567890" class="contact-item mb-2">
+              <i class="fa fa-phone me-2"></i>
+              <span class="contact-text">+20 123 456 7890</span>
+            </a>
+            <a href="mailto:info@digitalsupport.com" class="contact-item mb-2">
+              <i class="fa fa-envelope me-2"></i>
+              <span class="contact-text">info@digitalsupport.com</span>
+            </a>
+            <a href="https://www.google.com/maps?q=30.044420,31.235712&z=15" target="_blank" class="contact-item">
+              <i class="fa fa-map-marker me-2"></i>
+              <span class="contact-text" data-i18n="nav.location">Cairo, Egypt</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="features.html" data-i18n="nav.features">Features</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html" data-i18n="nav.login">Login</a></li>
+
+          <!-- Language Switcher -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle lang-switcher" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="https://flagcdn.com/w20/gb.png" class="lang-flag" id="current-flag" alt="Language Flag">
+              <span id="current-lang">EN</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item lang-option" href="#" data-lang="en">
+                  <img src="https://flagcdn.com/w20/gb.png" class="lang-flag" alt="English"> English
+                </a></li>
+              <li><a class="dropdown-item lang-option" href="#" data-lang="ar">
+                  <img src="https://flagcdn.com/w20/sa.png" class="lang-flag" alt="العربية"> العربية
+                </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Hero Section -->
+  <section class="project-hero text-center">
+    <div class="container">
+      <h1 data-i18n="projects.hero.title">Our Success Stories</h1>
+      <p class="lead" data-i18n="projects.hero.subtitle">
+        Discover how we've helped businesses transform their operations and achieve remarkable results through our digital solutions.
+      </p>
+    </div>
+  </section>
+
+  <main class="page">
+    <section class="clean-block about-us">
+      <div class="container">
+        <div class="block-heading text-center">
+          <h2 class="text-info" data-i18n="projects.main.title">Featured Projects</h2>
+          <p class="section-subtitle" data-i18n="projects.main.subtitle">
+            From small businesses to large enterprises, we deliver innovative solutions that drive growth and efficiency.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+
+          <!-- Project 1: E-commerce Platform -->
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card text-center project-card">
+              <img class="card-img-top w-100 d-block" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+              <div class="card-body info p-4">
+                <div class="project-category" data-i18n="projects.1.category">E-commerce Platform</div>
+                <h4 class="card-title" data-i18n="projects.1.title">NileMart Online Store</h4>
+                <p class="card-text" data-i18n="projects.1.description">
+                  Complete e-commerce solution for a leading retail chain with integrated inventory management, payment gateway, and customer analytics.
+                </p>
+                
+                <div class="project-stats">
+                  <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span data-i18n="projects.1.duration">Duration: 4 months</span>
+                  </div>
+                  <div class="stat-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span data-i18n="projects.1.results">Results: 300% sales increase</span>
+                  </div>
+                  <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span data-i18n="projects.1.team">Team: 8 specialists</span>
+                  </div>
+                </div>
+                
+                <a href="#" class="project-link" data-i18n="projects.view_case">
+                  View Case Study <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Mobile Banking App -->
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card text-center project-card">
+              <img class="card-img-top w-100 d-block" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+              <div class="card-body info p-4">
+                <div class="project-category" data-i18n="projects.2.category">Mobile Banking</div>
+                <h4 class="card-title" data-i18n="projects.2.title">EgyptBank Mobile App</h4>
+                <p class="card-text" data-i18n="projects.2.description">
+                  Secure mobile banking application with biometric authentication, real-time transactions, and personalized financial insights.
+                </p>
+                
+                <div class="project-stats">
+                  <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span data-i18n="projects.2.duration">Duration: 6 months</span>
+                  </div>
+                  <div class="stat-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span data-i18n="projects.2.results">Results: 500k+ downloads</span>
+                  </div>
+                  <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span data-i18n="projects.2.team">Team: 12 specialists</span>
+                  </div>
+                </div>
+                
+                <a href="#" class="project-link" data-i18n="projects.view_case">
+                  View Case Study <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: ERP System -->
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card text-center project-card">
+              <img class="card-img-top w-100 d-block" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+              <div class="card-body info p-4">
+                <div class="project-category" data-i18n="projects.3.category">Enterprise Solutions</div>
+                <h4 class="card-title" data-i18n="projects.3.title">Manufacturing ERP System</h4>
+                <p class="card-text" data-i18n="projects.3.description">
+                  Custom ERP solution for automotive manufacturer integrating production, supply chain, and quality control modules.
+                </p>
+                
+                <div class="project-stats">
+                  <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span data-i18n="projects.3.duration">Duration: 9 months</span>
+                  </div>
+                  <div class="stat-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span data-i18n="projects.3.results">Results: 40% efficiency gain</span>
+                  </div>
+                  <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span data-i18n="projects.3.team">Team: 15 specialists</span>
+                  </div>
+                </div>
+                
+                <a href="#" class="project-link" data-i18n="projects.view_case">
+                  View Case Study <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Healthcare Portal -->
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card text-center project-card">
+              <img class="card-img-top w-100 d-block" src="https://eiadah.com/images/personal.jpg" />
+              <div class="card-body info p-4">
+                <div class="project-category" data-i18n="projects.4.category">Healthcare Technology</div>
+                <h4 class="card-title" data-i18n="projects.4.title">MediCare Patient Portal</h4>
+                <p class="card-text" data-i18n="projects.4.description">
+                  Digital healthcare platform connecting patients with medical providers, featuring appointment scheduling and electronic records.
+                </p>
+                
+                <div class="project-stats">
+                  <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span data-i18n="projects.4.duration">Duration: 5 months</span>
+                  </div>
+                  <div class="stat-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span data-i18n="projects.4.results">Results: 80% faster appointments</span>
+                  </div>
+                  <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span data-i18n="projects.4.team">Team: 10 specialists</span>
+                  </div>
+                </div>
+                
+                <a href="#" class="project-link" data-i18n="projects.view_case">
+                  View Case Study <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Education Platform -->
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card text-center project-card">
+              <img class="card-img-top w-100 d-block" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+              <div class="card-body info p-4">
+                <div class="project-category" data-i18n="projects.5.category">Education Technology</div>
+                <h4 class="card-title" data-i18n="projects.5.title">EduTech Learning Platform</h4>
+                <p class="card-text" data-i18n="projects.5.description">
+                  Interactive online learning platform with video courses, assessments, and progress tracking for educational institutions.
+                </p>
+                
+                <div class="project-stats">
+                  <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span data-i18n="projects.5.duration">Duration: 4 months</span>
+                  </div>
+                  <div class="stat-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span data-i18n="projects.5.results">Results: 50k+ active users</span>
+                  </div>
+                  <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span data-i18n="projects.5.team">Team: 7 specialists</span>
+                  </div>
+                </div>
+                
+                <a href="#" class="project-link" data-i18n="projects.view_case">
+                  View Case Study <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Logistics Management -->
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card text-center project-card">
+              <img class="card-img-top w-100 d-block" src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+              <div class="card-body info p-4">
+                <div class="project-category" data-i18n="projects.6.category">Logistics & Supply Chain</div>
+                <h4 class="card-title" data-i18n="projects.6.title">LogiTrack Fleet Management</h4>
+                <p class="card-text" data-i18n="projects.6.description">
+                  Real-time logistics tracking system with route optimization, inventory management, and delivery analytics for transport companies.
+                </p>
+                
+                <div class="project-stats">
+                  <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span data-i18n="projects.6.duration">Duration: 7 months</span>
+                  </div>
+                  <div class="stat-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span data-i18n="projects.6.results">Results: 35% cost reduction</span>
+                  </div>
+                  <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span data-i18n="projects.6.team">Team: 9 specialists</span>
+                  </div>
+                </div>
+                
+                <a href="#" class="project-link" data-i18n="projects.view_case">
+                  View Case Study <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Project Stats Section -->
+        <div class="row mt-5 pt-5">
+          <div class="col-12 text-center mb-4">
+            <h3 data-i18n="projects.stats.title">Our Impact in Numbers</h3>
+          </div>
+          <div class="col-md-3 col-6 text-center mb-4">
+            <div class="display-4 text-primary fw-bold">150+</div>
+            <p data-i18n="projects.stats.projects">Projects Completed</p>
+          </div>
+          <div class="col-md-3 col-6 text-center mb-4">
+            <div class="display-4 text-primary fw-bold">98%</div>
+            <p data-i18n="projects.stats.satisfaction">Client Satisfaction</p>
+          </div>
+          <div class="col-md-3 col-6 text-center mb-4">
+            <div class="display-4 text-primary fw-bold">50+</div>
+            <p data-i18n="projects.stats.clients">Happy Clients</p>
+          </div>
+          <div class="col-md-3 col-6 text-center mb-4">
+            <div class="display-4 text-primary fw-bold">24/7</div>
+            <p data-i18n="projects.stats.support">Support Available</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h5 data-i18n="footer.get_started">Get started</h5>
+          <ul>
+            <li><a href="index.html" data-i18n="footer.home">Home</a></li>
+            <li><a href="pricing.html" data-i18n="footer.sign_up">Sign up</a></li>
+            <li><a href="features.html" data-i18n="footer.downloads">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h5 data-i18n="footer.about_us">About us</h5>
+          <ul>
+            <li><a href="#" data-i18n="footer.company_info">Company Information</a></li>
+            <li><a href="#" data-i18n="footer.contact_us">Contact us</a></li>
+            <li><a href="#" data-i18n="footer.reviews">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h5 data-i18n="footer.support">Support</h5>
+          <ul>
+            <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+            <li><a href="#" data-i18n="footer.help_desk">Help desk</a></li>
+            <li><a href="#" data-i18n="footer.forums">Forums</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h5 data-i18n="footer.legal">Legal</h5>
+          <ul>
+            <li><a href="#" data-i18n="footer.terms_service">Terms of Service</a></li>
+            <li><a href="#" data-i18n="footer.terms_use">Terms of Use</a></li>
+            <li><a href="#" data-i18n="footer.privacy_policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p data-i18n="footer.copyright">© 2024 Digital Support. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+  <script src="assets/js/vanilla-zoom.js"></script>
+  <script src="assets/js/theme.js"></script>
+  
+  <script>
+    // Define translation dictionaries
+    const translations = {
+      en: {
+        // Page Meta
+        "page.title": "Projects - Digital Support",
+        // Navigation
+        "nav.brand": "Digital Support",
+        "nav.toggle": "Toggle navigation",
+        "nav.home": "Home",
+        "nav.features": "Features",
+        "nav.projects": "Projects",
+        "nav.pricing": "Pricing",
+        "nav.login": "Login",
+        "nav.location": "Cairo, Egypt",
+        // Projects Hero
+        "projects.hero.title": "Our Success Stories",
+        "projects.hero.subtitle": "Discover how we've helped businesses transform their operations and achieve remarkable results through our digital solutions.",
+        // Main Projects Section
+        "projects.main.title": "Featured Projects",
+        "projects.main.subtitle": "From small businesses to large enterprises, we deliver innovative solutions that drive growth and efficiency.",
+        // Project 1
+        "projects.1.category": "E-commerce Platform",
+        "projects.1.title": "NileMart Online Store",
+        "projects.1.description": "Complete e-commerce solution for a leading retail chain with integrated inventory management, payment gateway, and customer analytics.",
+        "projects.1.duration": "Duration: 4 months",
+        "projects.1.results": "Results: 300% sales increase",
+        "projects.1.team": "Team: 8 specialists",
+        // Project 2
+        "projects.2.category": "Mobile Banking",
+        "projects.2.title": "EgyptBank Mobile App",
+        "projects.2.description": "Secure mobile banking application with biometric authentication, real-time transactions, and personalized financial insights.",
+        "projects.2.duration": "Duration: 6 months",
+        "projects.2.results": "Results: 500k+ downloads",
+        "projects.2.team": "Team: 12 specialists",
+        // Project 3
+        "projects.3.category": "Enterprise Solutions",
+        "projects.3.title": "Manufacturing ERP System",
+        "projects.3.description": "Custom ERP solution for automotive manufacturer integrating production, supply chain, and quality control modules.",
+        "projects.3.duration": "Duration: 9 months",
+        "projects.3.results": "Results: 40% efficiency gain",
+        "projects.3.team": "Team: 15 specialists",
+        // Project 4
+        "projects.4.category": "Healthcare Technology",
+        "projects.4.title": "MediCare Patient Portal",
+        "projects.4.description": "Digital healthcare platform connecting patients with medical providers, featuring appointment scheduling and electronic records.",
+        "projects.4.duration": "Duration: 5 months",
+        "projects.4.results": "Results: 80% faster appointments",
+        "projects.4.team": "Team: 10 specialists",
+        // Project 5
+        "projects.5.category": "Education Technology",
+        "projects.5.title": "EduTech Learning Platform",
+        "projects.5.description": "Interactive online learning platform with video courses, assessments, and progress tracking for educational institutions.",
+        "projects.5.duration": "Duration: 4 months",
+        "projects.5.results": "Results: 50k+ active users",
+        "projects.5.team": "Team: 7 specialists",
+        // Project 6
+        "projects.6.category": "Logistics & Supply Chain",
+        "projects.6.title": "LogiTrack Fleet Management",
+        "projects.6.description": "Real-time logistics tracking system with route optimization, inventory management, and delivery analytics for transport companies.",
+        "projects.6.duration": "Duration: 7 months",
+        "projects.6.results": "Results: 35% cost reduction",
+        "projects.6.team": "Team: 9 specialists",
+        // Common
+        "projects.view_case": "View Case Study",
+        // Stats Section
+        "projects.stats.title": "Our Impact in Numbers",
+        "projects.stats.projects": "Projects Completed",
+        "projects.stats.satisfaction": "Client Satisfaction",
+        "projects.stats.clients": "Happy Clients",
+        "projects.stats.support": "Support Available",
+        // Footer
+        "footer.get_started": "Get started",
+        "footer.home": "Home",
+        "footer.sign_up": "Sign up",
+        "footer.downloads": "Features",
+        "footer.about_us": "About us",
+        "footer.company_info": "Company Information",
+        "footer.contact_us": "Contact us",
+        "footer.reviews": "Reviews",
+        "footer.support": "Support",
+        "footer.faq": "FAQ",
+        "footer.help_desk": "Help desk",
+        "footer.forums": "Forums",
+        "footer.legal": "Legal",
+        "footer.terms_service": "Terms of Service",
+        "footer.terms_use": "Terms of Use",
+        "footer.privacy_policy": "Privacy Policy",
+        "footer.copyright": "© 2024 Digital Support. All rights reserved."
+      },
+      ar: {
+        // Page Meta
+        "page.title": "المشاريع - الدعم الرقمي",
+        // Navigation
+        "nav.brand": "الدعم الرقمي",
+        "nav.toggle": "تبديل التنقل",
+        "nav.home": "الرئيسية",
+        "nav.features": "المميزات",
+        "nav.projects": "المشاريع",
+        "nav.pricing": "التسعير",
+        "nav.login": "تسجيل الدخول",
+        "nav.location": "القاهرة، مصر",
+        // Projects Hero
+        "projects.hero.title": "قصص نجاحنا",
+        "projects.hero.subtitle": "اكتشف كيف ساعدنا الشركات في تحويل عملياتها وتحقيق نتائج ملحوظة من خلال حلولنا الرقمية.",
+        // Main Projects Section
+        "projects.main.title": "المشاريع المميزة",
+        "projects.main.subtitle": "من الشركات الصغيرة إلى المؤسسات الكبيرة، نقدم حلولاً مبتكرة تدفع النمو والكفاءة.",
+        // Project 1
+        "projects.1.category": "منصة التجارة الإلكترونية",
+        "projects.1.title": "متجر NileMart الإلكتروني",
+        "projects.1.description": "حل متكامل للتجارة الإلكترونية لسلسلة تجارية رائدة مع إدارة مخزون متكاملة وبوابة دفع وتحليلات العملاء.",
+        "projects.1.duration": "المدة: 4 أشهر",
+        "projects.1.results": "النتائج: زيادة المبيعات 300٪",
+        "projects.1.team": "الفريق: 8 متخصصين",
+        // Project 2
+        "projects.2.category": "الخدمات المصرفية عبر الهاتف",
+        "projects.2.title": "تطبيق EgyptBank للهاتف",
+        "projects.2.description": "تطبيق مصرفي آمن للهاتف المحمول مع مصادقة بيومترية ومعاملات في الوقت الفعلي ورؤى مالية مخصصة.",
+        "projects.2.duration": "المدة: 6 أشهر",
+        "projects.2.results": "النتائج: 500 ألف+ تحميل",
+        "projects.2.team": "الفريق: 12 متخصصين",
+        // Project 3
+        "projects.3.category": "حلول المؤسسات",
+        "projects.3.title": "نظام ERP للتصنيع",
+        "projects.3.description": "حل ERP مخصص لمصنع سيارات يدمج وحدات الإنتاج وسلسلة التوريد ومراقبة الجودة.",
+        "projects.3.duration": "المدة: 9 أشهر",
+        "projects.3.results": "النتائج: زيادة الكفاءة 40٪",
+        "projects.3.team": "الفريق: 15 متخصصين",
+        // Project 4
+        "projects.4.category": "تكنولوجيا الرعاية الصحية",
+        "projects.4.title": "بوابة MediCare للمرضى",
+        "projects.4.description": "منصة رعاية صحية رقمية تربط المرضى بمقدمي الخدمات الطبية، مع ميزات جدولة المواعيد والسجلات الإلكترونية.",
+        "projects.4.duration": "المدة: 5 أشهر",
+        "projects.4.results": "النتائج: مواعيد أسرع بنسبة 80٪",
+        "projects.4.team": "الفريق: 10 متخصصين",
+        // Project 5
+        "projects.5.category": "تكنولوجيا التعليم",
+        "projects.5.title": "منصة EduTech التعليمية",
+        "projects.5.description": "منصة تعلم تفاعلية عبر الإنترنت مع دورات فيديو وتقييمات وتتبع التقدم للمؤسسات التعليمية.",
+        "projects.5.duration": "المدة: 4 أشهر",
+        "projects.5.results": "النتائج: 50 ألف+ مستخدم نشط",
+        "projects.5.team": "الفريق: 7 متخصصين",
+        // Project 6
+        "projects.6.category": "اللوجستيات وسلسلة التوريد",
+        "projects.6.title": "إدارة أسطول LogiTrack",
+        "projects.6.description": "نظام تتبع لوجستي في الوقت الفعلي مع تحسين المسار وإدارة المخزون وتحليلات التسليم لشركات النقل.",
+        "projects.6.duration": "المدة: 7 أشهر",
+        "projects.6.results": "النتائج: تخفيض التكاليف 35٪",
+        "projects.6.team": "الفريق: 9 متخصصين",
+        // Common
+        "projects.view_case": "عرض دراسة الحالة",
+        // Stats Section
+        "projects.stats.title": "تأثيرنا في الأرقام",
+        "projects.stats.projects": "مشروع مكتمل",
+        "projects.stats.satisfaction": "رضا العملاء",
+        "projects.stats.clients": "عميل سعيد",
+        "projects.stats.support": "دعم متاح",
+        // Footer
+        "footer.get_started": "ابدأ",
+        "footer.home": "الرئيسية",
+        "footer.sign_up": "اشتراك",
+        "footer.downloads": "المميزات",
+        "footer.about_us": "من نحن",
+        "footer.company_info": "معلومات الشركة",
+        "footer.contact_us": "اتصل بنا",
+        "footer.reviews": "المراجعات",
+        "footer.support": "الدعم",
+        "footer.faq": "الأسئلة الشائعة",
+        "footer.help_desk": "مكتب المساعدة",
+        "footer.forums": "المنتديات",
+        "footer.legal": "قانوني",
+        "footer.terms_service": "شروط الخدمة",
+        "footer.terms_use": "شروط الاستخدام",
+        "footer.privacy_policy": "سياسة الخصوصية",
+        "footer.copyright": "© 2024 الدعم الرقمي. جميع الحقوق محفوظة."
+      }
+    };
+
+    // Cookie helper functions
+    function setCookie(name, value, days) {
+      // Actually using localStorage
+      localStorage.setItem(name, value);
+    }
+
+    function getCookie(name) {
+      const value = localStorage.getItem(name);
+      return value;
+    }
+
+    // Core translation function
+    function loadLanguage(lang) {
+      // 1. Set HTML language and direction attributes
+      document.documentElement.setAttribute('lang', lang);
+      if (lang === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.body.classList.add('rtl');
+      } else {
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.body.classList.remove('rtl');
+      }
+
+      // 2. Update all elements with data-i18n attributes
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          if (element.hasAttribute('placeholder')) {
+            element.setAttribute('placeholder', translations[lang][key]);
+          } else {
+            element.textContent = translations[lang][key];
+          }
+        }
+      });
+
+      // 3. Update the language switcher UI
+      const currentFlag = document.getElementById('current-flag');
+      const currentLangText = document.getElementById('current-lang');
+      if (lang === 'ar') {
+        currentFlag.src = 'https://flagcdn.com/w20/sa.png';
+        currentFlag.alt = 'العربية';
+        currentLangText.textContent = 'AR';
+      } else {
+        currentFlag.src = 'https://flagcdn.com/w20/gb.png';
+        currentFlag.alt = 'English';
+        currentLangText.textContent = 'EN';
+      }
+
+      // 4. Save preference to cookie (expires in 30 days)
+      setCookie('preferred-language', lang, 30);
+    }
+
+    // Initialize language on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      // Check for saved preference in cookie
+      const savedLang = getCookie('preferred-language');
+
+      // If no cookie exists, check browser language
+      const browserLang = navigator.language.startsWith('ar') ? 'ar' : 'en';
+
+      const defaultLang = savedLang || browserLang;
+
+      loadLanguage(defaultLang);
+
+      // Set up click handlers for language switcher options
+      document.querySelectorAll('.lang-option').forEach(option => {
+        option.addEventListener('click', function (e) {
+          e.preventDefault();
+          const selectedLang = this.getAttribute('data-lang');
+          loadLanguage(selectedLang);
+        });
+      });
+    });
+
+  </script>
+
+  <script>
+    // Scroll reveal animation
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all elements with scroll animation classes
+      const scrollElements = document.querySelectorAll('.scroll-fade, .scroll-fade-left, .scroll-fade-right');
+
+      // Function to check if element is in viewport
+      const elementInView = (el, percentageScroll = 100) => {
+        const elementTop = el.getBoundingClientRect().top;
+        const elementHeight = el.getBoundingClientRect().height;
+
+        return (
+          elementTop <=
+          (window.innerHeight || document.documentElement.clientHeight) * (percentageScroll / 100)
+        );
+      };
+
+      // Function to handle scroll animation
+      const handleScrollAnimation = () => {
+        scrollElements.forEach(el => {
+          if (elementInView(el, 90)) {
+            el.classList.add('scroll-visible');
+          }
+        });
+      };
+
+      // Initial check on page load
+      setTimeout(() => {
+        handleScrollAnimation();
+      }, 300);
+
+      // Listen for scroll events with throttling
+      let scrollTimeout;
+      window.addEventListener('scroll', () => {
+        if (scrollTimeout) {
+          clearTimeout(scrollTimeout);
+        }
+        scrollTimeout = setTimeout(handleScrollAnimation, 50);
+      });
+
+      // Also check on window resize
+      window.addEventListener('resize', handleScrollAnimation);
+    });
+  </script>
+
+  <script src="whatsapp.js"></script>
+</body>
+
+</html>

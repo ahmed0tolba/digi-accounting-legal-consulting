@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- Language and direction will be controlled by JavaScript -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title data-i18n="page.title">Home - Digital Support</title>
+  <!-- Conditionally load RTL Bootstrap CSS for Arabic -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" id="bootstrap-style" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" />
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/Features-Blue.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+  <link rel="stylesheet" href="assets/css/Projects-Horizontal.css" />
+  <link rel="stylesheet" href="assets/css/Team-Boxed.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
+  <!-- <link rel="stylesheet" href="/assets/css/footer.css" /> -->
+
+  <style>
+    
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <div class="container">
+      <!-- Desktop Contact + Brand in one row -->
+      <div class="">
+        <!-- Brand -->
+        <a class="navbar-brand logo me-3" href="#" data-i18n="nav.brand">Digital Support</a>
+
+        <!-- Desktop Contact Info -->
+        <div class="contact-info d-none d-lg-flex ms-auto me-4">
+          <a href="tel:+201234567890" class="contact-item me-3">
+            <i class="fa fa-phone"></i>
+            <span class="contact-text d-none d-xl-inline">+20 123 456 7890</span>
+          </a>
+          <a href="mailto:info@digitalsupport.com" class="contact-item me-3">
+            <i class="fa fa-envelope"></i>
+            <span class="contact-text d-none d-xl-inline">info@digitalsupport.com</span>
+          </a>
+          <a href="https://www.google.com/maps?q=30.044420,31.235712&z=15" target="_blank" class="contact-item">
+            <i class="fa fa-map-marker"></i>
+            <span class="contact-text d-none d-xl-inline" data-i18n="nav.location">Cairo, Egypt</span>
+          </a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button data-bs-toggle="collapse" class="navbar-toggler ms-auto" data-bs-target="#navcol-1">
+          <span class="visually-hidden" data-i18n="nav.toggle">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+
+      <!-- Collapsible Content -->
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <!-- Mobile Contact Info -->
+        <div class="mobile-contact d-lg-none mb-3 p-3 bg-light rounded">
+          <div class="contact-info flex-column">
+            <a href="tel:+201234567890" class="contact-item mb-2">
+              <i class="fa fa-phone me-2"></i>
+              <span class="contact-text">+20 123 456 7890</span>
+            </a>
+            <a href="mailto:info@digitalsupport.com" class="contact-item mb-2">
+              <i class="fa fa-envelope me-2"></i>
+              <span class="contact-text">info@digitalsupport.com</span>
+            </a>
+            <a href="https://www.google.com/maps?q=30.044420,31.235712&z=15" target="_blank" class="contact-item">
+              <i class="fa fa-map-marker me-2"></i>
+              <span class="contact-text" data-i18n="nav.location">Cairo, Egypt</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="features.html" data-i18n="nav.features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="about-us.html" data-i18n="nav.about">About Us</a></li> -->
+          <!-- <li class="nav-item"><a class="nav-link" href="contact-us.html" data-i18n="nav.contact">Contact Us</a></li> -->
+          <!-- <li class="nav-item"><a class="nav-link" href="registration.html" data-i18n="nav.signup">Sign Up</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="login.html" data-i18n="nav.login">Login</a></li>
+
+          <!-- Language Switcher -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle lang-switcher" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="https://flagcdn.com/w20/gb.png" class="lang-flag" id="current-flag" alt="Language Flag">
+              <span id="current-lang">EN</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item lang-option" href="#" data-lang="en">
+                  <img src="https://flagcdn.com/w20/gb.png" class="lang-flag" alt="English"> English
+                </a></li>
+              <li><a class="dropdown-item lang-option" href="#" data-lang="ar">
+                  <img src="https://flagcdn.com/w20/sa.png" class="lang-flag" alt="العربية"> العربية
+                </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="page landing-page">
+    <!-- Hero Section -->
+    <section class="clean-block clean-hero"
+      style="background-image: url('assets/img/team-work-process-young-business-managers-crew-working-with-new-startup-project-labtop-wood-table-typing-keyboard-texting-message-analyze-graph-plans.jpg'); color: rgba(9, 162, 255, 0.85);">
+      <div class="text">
+        <h2 data-i18n="hero.title">Expert Legal & Accounting Solutions</h2>
+        <p data-i18n="hero.subtitle">
+          Nile Legal & Accounting Advisors provides comprehensive audit, tax, legal consulting, and advisory services to
+          businesses across Egypt.
+        </p>
+        <button class="btn btn-outline-light btn-lg" type="button" data-i18n="hero.cta">
+          Contact Us Today
+        </button>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="clean-block clean-info dark">
+      <div class="container">
+        <div class="block-heading">
+          <h2 class="text-info" data-i18n="expertise.title">Our Expertise</h2>
+          <p data-i18n="expertise.description">
+            With over 20 years serving Egyptian businesses, we deliver tailored financial clarity and legal compliance
+            solutions.
+          </p>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img class="img-thumbnail" src="assets/img/cooperation-analyst-chart-professional-paper-economics.jpg" />
+          </div>
+          <div class="col-md-6">
+            <h3 data-i18n="expertise.subtitle">Comprehensive Compliance Services</h3>
+            <div class="getting-started-info">
+              <p data-i18n="expertise.details">
+                Our team handles regulatory compliance, tax advisory, financial audits, and corporate governance to
+                protect your business interests and ensure sustainable growth.
+              </p>
+            </div>
+            <button class="btn btn-outline-primary btn-lg" type="button" data-i18n="expertise.cta">
+              Schedule Consultation
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features/Services Section -->
+    <section class="clean-block features">
+      <div class="container">
+        <div class="block-heading scroll-fade">
+          <div class="block-heading">
+            <h2 class="text-info" data-i18n="services.title">Our Services</h2>
+            <p data-i18n="services.description">
+              From auditing and tax planning to legal advisory and risk management, we provide end-to-end professional
+              solutions.
+            </p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-5 feature-box scroll-fade">
+              <i class="icon"><img src="assets/img/documents-search-icon.png" style="height: 1em;"></i>
+              <h4 data-i18n="services.audit.title">Audit & Assurance</h4>
+              <p data-i18n="services.audit.desc">
+                Comprehensive financial audits and assurance services ensuring accuracy, transparency, and regulatory
+                compliance for your business.
+              </p>
+            </div>
+            <div class="col-md-5 feature-box scroll-fade">
+              <i class="icon"><img src="assets/img/mortgage-icon.png" style="height: 1em;"></i>
+              <h4 data-i18n="services.tax.title">Tax Advisory</h4>
+              <p data-i18n="services.tax.desc">
+                Strategic tax planning, compliance, and optimization services tailored to Egyptian regulations and your
+                business needs.
+              </p>
+            </div>
+            <div class="col-md-5 feature-box scroll-fade">
+              <i class="icon"><img src="assets/img/bank-building-icon.png" style="height: 1em;"></i>
+              <h4 data-i18n="services.legal.title">Legal Consulting</h4>
+              <p data-i18n="services.legal.desc">
+                Expert guidance on corporate law, contracts, regulatory compliance, and dispute resolution for seamless
+                operations.
+              </p>
+            </div>
+            <div class="col-md-5 feature-box scroll-fade">
+              <i class="icon"><img src="assets/img/risk-management-icon.png" style="height: 1em;"></i>
+              <h4 data-i18n="services.risk.title">Risk Management</h4>
+              <p data-i18n="services.risk.desc">
+                Proactive identification and mitigation of financial, legal, and operational risks to safeguard your
+                business future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <section class="projects-horizontal">
+        <div class="container">
+          <div class="intro scroll-fade">
+            <h2 class="text-center" data-i18n="projects.title">Recent Client Successes</h2>
+            <p class="text-center" data-i18n="projects.description">
+              Delivering measurable results through trusted advisory services for businesses in Egypt.
+            </p>
+          </div>
+          <div class="row projects">
+            <!-- Project items 1 to 4 -->
+            <div class="col-sm-6 item card border-info bg-light scroll-fade-left">
+              <div class="row card-body">
+                <div class="col-md-12 col-lg-5">
+                  <a href="#"><img class="img-fluid" src="assets/img/tax_optimization.png" /></a>
+                </div>
+                <div class="col">
+                  <h3 class="name" data-i18n="projects.1.title">Tax Optimization Project</h3>
+                  <hr />
+                  <p class="description" data-i18n="projects.1.desc">
+                    Assisted manufacturing firm in restructuring tax strategy, achieving 25% savings while maintaining
+                    full compliance.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ... (Other project items follow the same pattern with data-i18n attributes) ... -->
+            <div class="col-sm-6 item card border-info bg-light scroll-fade-right">
+              <div class="row card-body">
+                <div class="col-md-12 col-lg-5">
+                  <a href="#"><img class="img-fluid" src="assets/img/corporate_audit.jpg" /></a>
+                </div>
+                <div class="col">
+                  <h3 class="name" data-i18n="projects.2.title">Corporate Audit</h3>
+                  <hr />
+                  <p class="description" data-i18n="projects.2.desc">
+                    Full financial audit for real estate developer, identifying key efficiencies and ensuring regulatory
+                    adherence.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 item card border-info bg-light scroll-fade-left">
+              <div class="row card-body">
+                <div class="col-md-12 col-lg-5">
+                  <a href="#"><img class="img-fluid" src="assets/img/legal_compliance.jpg" /></a>
+                </div>
+                <div class="col">
+                  <h3 class="name" data-i18n="projects.3.title">Legal Compliance Review</h3>
+                  <hr />
+                  <p class="description" data-i18n="projects.3.desc">
+                    Comprehensive legal audit for import/export company, resolving compliance issues and streamlining
+                    operations.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 item card border-info bg-light scroll-fade-right">
+              <div class="row card-body">
+                <div class="col-md-12 col-lg-5">
+                  <a href="#"><img class="img-fluid" src="assets/img/financial_restructuring.jpg" /></a>
+                </div>
+                <div class="col">
+                  <h3 class="name" data-i18n="projects.4.title">Financial Restructuring</h3>
+                  <hr />
+                  <p class="description" data-i18n="projects.4.desc">
+                    Guided SME through financial reorganization, improving cash flow and securing growth capital.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="clean-block slider dark">
+      <div class="container">
+        <div class="block-heading text-center">
+          <h2 class="text-info" data-i18n="testimonials.title">Client Testimonials</h2>
+          <p data-i18n="testimonials.subtitle">Real feedback from businesses we worked with</p>
+        </div>
+        <div class="carousel slide" id="carousel-1" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Testimonial items 1 to 3 -->
+            <div class="carousel-item active">
+              <div class="testimonial-card">
+                <div class="avatar">MK</div>
+                <blockquote data-i18n="testimonials.1.quote">
+                  “We reduced manual reporting time by more than 60%. The solution was simple, stable, and delivered
+                  exactly what was promised.”
+                </blockquote>
+                <div class="client">
+                  <strong data-i18n="testimonials.1.name">Mohamed K.</strong>
+                  <span data-i18n="testimonials.1.role">Operations Manager — Logistics Company</span>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <div class="avatar">SA</div>
+                <blockquote data-i18n="testimonials.2.quote">
+                  “Our legacy system was fragile. The migration plan was realistic
+                  and avoided downtime. That mattered more than fancy tech.”
+                </blockquote>
+                <div class="client">
+                  <strong data-i18n="testimonials.2.name">Salma A.</strong>
+                  <span data-i18n="testimonials.2.role">IT Lead — Manufacturing</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <div class="avatar">HR</div>
+                <blockquote data-i18n="testimonials.3.quote">
+                  “Clear communication, fast delivery, and no unnecessary complexity.
+                  We finally understand our own system.”
+                </blockquote>
+                <div class="client">
+                  <strong data-i18n="testimonials.3.name">Hassan R.</strong>
+                  <span data-i18n="testimonials.3.role">Founder — Small Business</span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team & Partners Section -->
+    <section class="about-us">
+      <div class="container scroll-fade">
+        <div class="block-heading">
+          <h2 class="text-info" data-i18n="partners.title">Our Partners</h2>
+          <p data-i18n="partners.description">
+            Meet the senior advisors leading your legal and financial success.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Partner cards 1 to 3 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="card text-center clean-card">
+              <div class="card-img-wrapper">
+                <img src="assets/img/Screenshot_1.jpg" alt="" />
+              </div>
+              <div class="card-body info">
+                <h4 class="card-title" data-i18n="partners.1.name">Ahmed Khalil</h4>
+                <p class="card-text" data-i18n="partners.1.role">
+                  Managing Partner - Legal Services, 18+ years in corporate law.
+                </p>
+                <div class="icons">
+                  <a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i
+                      class="icon-social-linkedin"></i></a><a href="#"><i class="icon-social-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <div class="card text-center clean-card">
+              <div class="card-img-wrapper">
+                <img src="assets/img/Screenshot_2.jpg" alt="" />
+              </div>
+              <div class="card-body info">
+                <h4 class="card-title" data-i18n="partners.2.name">Ahmed Hassan</h4>
+                <p class="card-text" data-i18n="partners.2.role">
+                  Tax Director, Certified Public Accountant with 15 years experience.
+                </p>
+                <div class="icons">
+                  <a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i
+                      class="icon-social-linkedin"></i></a><a href="#"><i class="icon-social-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <div class="card text-center clean-card">
+              <div class="card-img-wrapper">
+                <img src="assets/img/Screenshot_3.jpg" alt="" />
+              </div>
+              <div class="card-body info">
+                <h4 class="card-title" data-i18n="partners.3.name">Mohamed Salem</h4>
+                <p class="card-text" data-i18n="partners.3.role">
+                  Audit Partner, specializing in financial restructuring.
+                </p>
+                <div class="icons">
+                  <a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i
+                      class="icon-social-linkedin"></i></a><a href="#"><i class="icon-social-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <section class="team-boxed">
+        <div class="container">
+          <div class="intro scroll-fade">
+            <h2 class="text-center" data-i18n="team.title">Our Leadership Team</h2>
+            <p class="text-center" data-i18n="team.description">
+              Experienced professionals dedicated to your business compliance and growth.
+            </p>
+          </div>
+          <div class="row people">
+            <!-- Team member cards 1 to 3 -->
+            <div class="col-md-6 col-lg-4 item scroll-fade-left">
+              <div class="box">
+                <img class="rounded-circle" src="assets/img/Screenshot_4.jpg" />
+                <h3 class="name" data-i18n="team.1.name">Omar Farouk</h3>
+                <p class="title" data-i18n="team.1.role">Senior Legal Consultant</p>
+                <p class="description" data-i18n="team.1.desc">
+                  Specializes in corporate governance, contracts, and regulatory compliance for multinational operations
+                  in Egypt.
+                </p>
+                <div class="social">
+                  <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                      class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 item scroll-fade">
+              <div class="box">
+                <img class="rounded-circle" src="assets/img/Screenshot_5.jpg" />
+                <h3 class="name" data-i18n="team.2.name">Youssef Mahmoud</h3>
+                <p class="title" data-i18n="team.2.role">Financial Controller</p>
+                <p class="description" data-i18n="team.2.desc">
+                  Leads audit teams providing financial statement analysis and profitability optimization for SMEs and
+                  corporations.
+                </p>
+                <div class="social">
+                  <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                      class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 item scroll-fade-right">
+              <div class="box">
+                <img class="rounded-circle" src="assets/img/Screenshot_6.jpg" />
+                <h3 class="name" data-i18n="team.3.name">Youssef Nasser</h3>
+                <p class="title" data-i18n="team.3.role">Risk Management Lead</p>
+                <p class="description" data-i18n="team.3.desc">
+                  Expert in financial risk assessment and compliance strategies for businesses navigating Egyptian
+                  regulations.
+                </p>
+                <div class="social">
+                  <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                      class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!----------------Page Footer------------------->
+  <footer class="page-footer dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h5 data-i18n="footer.get_started">Get started</h5>
+          <ul>
+            <li><a href="#" data-i18n="footer.home">Home</a></li>
+            <li><a href="#" data-i18n="footer.sign_up">Sign up</a></li>
+            <li><a href="#" data-i18n="footer.downloads">Downloads</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h5 data-i18n="footer.about_us">About us</h5>
+          <ul>
+            <li><a href="#" data-i18n="footer.company_info">Company Information</a></li>
+            <li><a href="#" data-i18n="footer.contact_us">Contact us</a></li>
+            <li><a href="#" data-i18n="footer.reviews">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h5 data-i18n="footer.support">Support</h5>
+          <ul>
+            <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+            <li><a href="#" data-i18n="footer.help_desk">Help desk</a></li>
+            <li><a href="#" data-i18n="footer.forums">Forums</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h5 data-i18n="footer.legal">Legal</h5>
+          <ul>
+            <li><a href="#" data-i18n="footer.terms_service">Terms of Service</a></li>
+            <li><a href="#" data-i18n="footer.terms_use">Terms of Use</a></li>
+            <li><a href="#" data-i18n="footer.privacy_policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div style="padding-left: 40vw; font-weight: 600" data-i18n="footer.copyright">
+      © 2021 Copyright Text
+    </div>
+    <p></p>
+  </footer>
+  <!----------------Page Footer------------------->
+
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+  <script src="assets/js/vanilla-zoom.js"></script>
+  <script src="assets/js/theme.js"></script>
+
+  <!-- Translation Logic -->
+  <script>
+    // Define translation dictionaries
+    const translations = {
+      en: {
+        // Page Meta
+        "page.title": "Home - Digital Support",
+        // Navigation
+        "nav.brand": "Digital Support",
+        "nav.toggle": "Toggle navigation",
+        "nav.home": "Home",
+        "nav.features": "Features",
+        "nav.projects": "Projects",
+        "nav.pricing": "Pricing",
+        "nav.about": "About Us",
+        "nav.contact": "Contact Us",
+        "nav.signup": "Sign Up",
+        "nav.login": "Login",
+        // Hero
+        "hero.title": "Expert Legal & Accounting Solutions",
+        "hero.subtitle": "Nile Legal & Accounting Advisors provides comprehensive audit, tax, legal consulting, and advisory services to businesses across Egypt.",
+        "hero.cta": "Contact Us Today",
+        // Expertise
+        "expertise.title": "Our Expertise",
+        "expertise.description": "With over 20 years serving Egyptian businesses, we deliver tailored financial clarity and legal compliance solutions.",
+        "expertise.subtitle": "Comprehensive Compliance Services",
+        "expertise.details": "Our team handles regulatory compliance, tax advisory, financial audits, and corporate governance to protect your business interests and ensure sustainable growth.",
+        "expertise.cta": "Schedule Consultation",
+        // Services
+        "services.title": "Our Services",
+        "services.description": "From auditing and tax planning to legal advisory and risk management, we provide end-to-end professional solutions.",
+        "services.audit.title": "Audit & Assurance",
+        "services.audit.desc": "Comprehensive financial audits and assurance services ensuring accuracy, transparency, and regulatory compliance for your business.",
+        "services.tax.title": "Tax Advisory",
+        "services.tax.desc": "Strategic tax planning, compliance, and optimization services tailored to Egyptian regulations and your business needs.",
+        "services.legal.title": "Legal Consulting",
+        "services.legal.desc": "Expert guidance on corporate law, contracts, regulatory compliance, and dispute resolution for seamless operations.",
+        "services.risk.title": "Risk Management",
+        "services.risk.desc": "Proactive identification and mitigation of financial, legal, and operational risks to safeguard your business future.",
+        // Projects
+        "projects.title": "Recent Client Successes",
+        "projects.description": "Delivering measurable results through trusted advisory services for businesses in Egypt.",
+        "projects.1.title": "Tax Optimization Project",
+        "projects.1.desc": "Assisted manufacturing firm in restructuring tax strategy, achieving 25% savings while maintaining full compliance.",
+
+        "projects.2.title": "Corporate Audit",
+        "projects.2.desc": "Full financial audit for real estate developer, identifying key efficiencies and ensuring regulatory adherence.",
+
+        "projects.3.title": "Legal Compliance Review",
+        "projects.3.desc": "Comprehensive legal audit for import/export company, resolving compliance issues and streamlining operations.",
+
+        "projects.4.title": "Financial Restructuring",
+        "projects.4.desc": "Guided SME through financial reorganization, improving cash flow and securing growth capital.",
+
+        // Testimonials
+        "testimonials.title": "Client Testimonials",
+        "testimonials.subtitle": "Real feedback from businesses we worked with",
+
+        "testimonials.1.quote": "“We reduced manual reporting time by more than 60%. The solution was simple, stable, and delivered exactly what was promised.”",
+        "testimonials.1.name": "Mohamed K.",
+        "testimonials.1.role": "Operations Manager — Logistics Company",
+
+        "testimonials.2.quote": "“Our legacy system was fragile. The migration plan was realistic and avoided downtime. That mattered more than fancy tech.”",
+        "testimonials.2.name": "Samy A.",
+        "testimonials.2.role": "IT Lead — Manufacturing",
+
+        "testimonials.3.quote": "“Clear communication, fast delivery, and no unnecessary complexity. We finally understand our own system.”",
+        "testimonials.3.name": "Hassan R.",
+        "testimonials.3.role": "Founder — Small Business",
+
+        // Partners & Team
+        "partners.title": "Our Partners",
+        "partners.description": "Meet the senior advisors leading your legal and financial success.",
+        "partners.1.name": "Ahmed Khalil",
+        "partners.1.role": "Managing Partner - Legal Services, 18+ years in corporate law.",
+
+        "partners.2.name": "Ahmed Hassan",
+        "partners.2.role": "Tax Director - Certified Public Accountant with 15 years experience.",
+
+        "partners.3.name": "Mohamed Salem",
+        "partners.3.role": "Audit Partner, specializing in financial restructuring.",
+
+        "team.title": "Our Leadership Team",
+        "team.description": "Experienced professionals dedicated to your business compliance and growth.",
+        "team.1.name": "Omar Farouk",
+        "team.1.role": "Senior Legal Consultant",
+        "team.1.desc": "Specializes in corporate governance, contracts, and regulatory compliance for multinational operations in Egypt.",
+
+        "team.2.name": "Youssef Mahmoud",
+        "team.2.role": "Financial Controller",
+        "team.2.desc": "Leads audit teams providing financial statement analysis and profitability optimization for SMEs and corporations.",
+
+        "team.3.name": "Youssef Nasser",
+        "team.3.role": "Risk Management Lead",
+        "team.3.desc": "Expert in financial risk assessment and compliance strategies for businesses navigating Egyptian regulations.",
+
+        // Footer
+        "footer.get_started": "Get started",
+        "footer.home": "Home",
+        "footer.sign_up": "Sign up",
+        "footer.downloads": "Downloads",
+        "footer.about_us": "About us",
+        "footer.company_info": "Company Information",
+        "footer.contact_us": "Contact us",
+        "footer.reviews": "Reviews",
+        "footer.support": "Support",
+        "footer.faq": "FAQ",
+        "footer.help_desk": "Help desk",
+        "footer.forums": "Forums",
+        "footer.legal": "Legal",
+        "footer.terms_service": "Terms of Service",
+        "footer.terms_use": "Terms of Use",
+        "footer.privacy_policy": "Privacy Policy",
+        "footer.copyright": "© 2021 Copyright Text"
+      },
+      ar: {
+        // Page Meta
+        "page.title": "الرئيسية - الدعم الرقمي",
+        // Navigation
+        "nav.brand": "الدعم الرقمي",
+        "nav.toggle": "تبديل التنقل",
+        "nav.home": "الرئيسية",
+        "nav.features": "الميزات",
+        "nav.projects": "المشاريع",
+        "nav.pricing": "التسعير",
+        "nav.about": "من نحن",
+        "nav.contact": "اتصل بنا",
+        "nav.signup": "اشتراك",
+        "nav.login": "تسجيل الدخول",
+        // Hero
+        "hero.title": "حلول قانونية ومحاسبية احترافية",
+        "hero.subtitle": "تقدم شركة نايل للمستشارين القانونيين والمحاسبين خدمات تدقيق وضريبية واستشارية قانونية وشاملة للشركات في جميع أنحاء مصر.",
+        "hero.cta": "اتصل بنا اليوم",
+        // Expertise
+        "expertise.title": "خبراتنا",
+        "expertise.description": "مع أكثر من 20 عامًا من خدمة الشركات المصرية، نقدم حلولاً مالية وقانونية مخصصة تضمن الوضوح والامتثال.",
+        "expertise.subtitle": "خدمات امتثال شاملة",
+        "expertise.details": "يتولى فريقنا مسائل الامتثال التنظيمي، والاستشارات الضريبية، والتدقيق المالي، وحوكمة الشركات لحماية مصالح عملك وضمان نمو مستدام.",
+        "expertise.cta": "جدولة استشارة",
+        // Services
+        "services.title": "خدماتنا",
+        "services.description": "من التدقيق والتخطيط الضريبي إلى الاستشارات القانونية وإدارة المخاطر، نقدم حلولًا مهنية متكاملة.",
+        "services.audit.title": "التدقيق والضمان",
+        "services.audit.desc": "خدمات تدقيق وضمان مالي شاملة تضمن الدقة والشفاهية والامتثال التنظيمي لعملك.",
+        "services.tax.title": "الاستشارات الضريبية",
+        "services.tax.desc": "خدمات تخطيط ضريبي استراتيجي وامتثال وتحسين مخصصة للوائح المصرية واحتياجات عملك.",
+        "services.legal.title": "الاستشارات القانونية",
+        "services.legal.desc": "توجيهات احترافية في القانون التجاري والعقود والامتثال التنظيمي وتسوية المنازعات لعمليات سلسة.",
+        "services.risk.title": "إدارة المخاطر",
+        "services.risk.desc": "تحديد وتخفيف استباقي للمخاطر المالية والقانونية والتشغيلية لحماية مستقبل عملك.",
+        // Projects
+        "projects.title": "قصص نجاح عملائنا",
+        "projects.description": "تقديم نتائج قابلة للقياس من خلال خدمات استشارية موثوقة للشركات في مصر.",
+        "projects.1.title": "مشروع تحسين الضرائب",
+        "projects.1.desc": "ساعدنا شركة تصنيع في إعادة هيكلة الاستراتيجية الضريبية، لتحقيق وفورات بنسبة 25٪ مع الحفاظ على الامتثال الكامل.",
+        "projects.2.title": "تدقيق الشركات",
+        "projects.2.desc": "تدقيق مالي كامل لمطور عقاري، لتحديد كفاءات رئيسية وضمان الالتزام التنظيمي.",
+        "projects.3.title": "مراجعة الامتثال القانوني",
+        "projects.3.desc": "تدقيق قانوني شامل لشركة استيراد/تصدير، لحل مشكلات الامتثال وتبسيط العمليات.",
+        "projects.4.title": "إعادة الهيكلة المالية",
+        "projects.4.desc": "توجيه منشأة صغيرة ومتوسطة خلال إعادة التنظيم المالي، لتحسين التدفق النقدي وتأمين رأس مال النمو.",
+        // Testimonials
+        "testimonials.title": "آراء العملاء",
+        "testimonials.subtitle": "ملاحظات حقيقية من الشركات التي عملنا معها",
+        "testimonials.1.quote": "“قللنا وقت إعداد التقارير اليدوية بأكثر من 60٪. كان الحل بسيطًا ومستقرًا وتم تسليمه تمامًا كما وعد.”",
+        "testimonials.1.name": "محمد ك.",
+        "testimonials.1.role": "مدير العمليات — شركة لوجستية",
+
+        "testimonials.2.quote": "“كان نظامنا القديم هشًا. كانت خطة الترحيل واقعية وتجنبت أي توقف عن العمل. وهذا كان أهم بكثير من التقنيات البراقة.”",
+        "testimonials.2.name": "سامي أ.",
+        "testimonials.2.role": "قائد فريق تقنية المعلومات — قطاع التصنيع",
+
+        "testimonials.3.quote": "“تواصل واضح، تنفيذ سريع، ومن دون تعقيد غير ضروري. أخيرًا أصبحنا نفهم نظامنا الداخلي.”",
+        "testimonials.3.name": "حسن ر.",
+        "testimonials.3.role": "المؤسس — شركة صغيرة",
+
+        // Partners & Team
+        "partners.title": "شركاؤنا",
+        "partners.description": "تعرف على كبار المستشارين الذين يقودون نجاحك القانوني والمالي.",
+        "partners.1.name": "أحمد خليل",
+        "partners.1.role": "الشريك الإداري - الخدمات القانونية، 18+ سنة في القانون التجاري.",
+        "partners.2.name": "أحمد حسن",
+        "partners.2.role": "مدير ضرائب، محاسب قانوني معتمد بخبرة 15 عامًا.",
+        "partners.3.name": "محمد سالم",
+        "partners.3.role": "شريك تدقيق، متخصص في إعادة الهيكلة المالية.",
+
+        "team.title": "فريق القيادة لدينا",
+        "team.description": "محترفون ذوو خبرة مكرسون لامتثال أعمالك ونموها.",
+        "team.1.name": "عمر فاروق",
+        "team.1.role": "مستشار قانوني أول",
+        "team.1.desc": "متخصص في حوكمة الشركات والعقود والامتثال التنظيمي للعمليات متعددة الجنسيات في مصر.",
+
+        "team.2.name": "يوسف محمود",
+        "team.2.role": "المدير المالي (Financial Controller)",
+        "team.2.desc": "يقود فرق التدقيق ويقدم تحليلات للقوائم المالية وتحسين الربحية للشركات الصغيرة والمتوسطة والشركات الكبرى.",
+
+        "team.3.name": "يوسف ناصر",
+        "team.3.role": "قائد إدارة المخاطر",
+        "team.3.desc": "خبير في تقييم المخاطر المالية واستراتيجيات الامتثال للشركات التي تعمل ضمن الأطر التنظيمية المصرية.",
+        // Footer
+        "footer.get_started": "البدء",
+        "footer.home": "الرئيسية",
+        "footer.sign_up": "اشتراك",
+        "footer.downloads": "التحميلات",
+        "footer.about_us": "من نحن",
+        "footer.company_info": "معلومات الشركة",
+        "footer.contact_us": "اتصل بنا",
+        "footer.reviews": "المراجعات",
+        "footer.support": "الدعم",
+        "footer.faq": "الأسئلة الشائعة",
+        "footer.help_desk": "مكتب المساعدة",
+        "footer.forums": "المنتديات",
+        "footer.legal": "قانوني",
+        "footer.terms_service": "شروط الخدمة",
+        "footer.terms_use": "شروط الاستخدام",
+        "footer.privacy_policy": "سياسة الخصوصية",
+        "footer.copyright": "© 2021 نص حقوق الطبع والنشر"
+      }
+    };
+
+    // FIXED: Better Cookie helper functions with SameSite support
+    function setCookie(name, value, days) {
+      // Actually using localStorage
+      localStorage.setItem(name, value);
+    }
+
+    function getCookie(name) {
+      const value = localStorage.getItem(name);
+      return value;
+    }
+
+
+    // Core translation function
+    function loadLanguage(lang) {
+
+      // 1. Set HTML language and direction attributes
+      document.documentElement.setAttribute('lang', lang);
+      if (lang === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.body.classList.add('rtl');
+      } else {
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.body.classList.remove('rtl');
+      }
+
+      // 2. Update all elements with data-i18n attributes
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          if (element.hasAttribute('placeholder')) {
+            element.setAttribute('placeholder', translations[lang][key]);
+          } else {
+            element.textContent = translations[lang][key];
+          }
+        }
+      });
+
+      // 3. Update the language switcher UI
+      const currentFlag = document.getElementById('current-flag');
+      const currentLangText = document.getElementById('current-lang');
+      if (lang === 'ar') {
+        currentFlag.src = 'https://flagcdn.com/w20/sa.png';
+        currentFlag.alt = 'العربية';
+        currentLangText.textContent = 'AR';
+      } else {
+        currentFlag.src = 'https://flagcdn.com/w20/gb.png';
+        currentFlag.alt = 'English';
+        currentLangText.textContent = 'EN';
+      }
+
+      // 4. Save preference to cookie (expires in 30 days)
+      setCookie('preferred-language', lang, 30);
+
+    }
+
+    // Initialize language on page load
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Check for saved preference in cookie
+      const savedLang = getCookie('preferred-language');
+
+      // If no cookie exists, check browser language
+      const browserLang = navigator.language.startsWith('ar') ? 'ar' : 'en';
+
+      const defaultLang = savedLang || browserLang;
+
+      loadLanguage(defaultLang);
+
+      // Set up click handlers for language switcher options
+      document.querySelectorAll('.lang-option').forEach(option => {
+        option.addEventListener('click', function (e) {
+          e.preventDefault();
+          const selectedLang = this.getAttribute('data-lang');
+          loadLanguage(selectedLang);
+        });
+      });
+    });
+
+  </script>
+
+  <script>
+    // Scroll reveal animation
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all elements with scroll animation classes
+      const scrollElements = document.querySelectorAll('.scroll-fade, .scroll-fade-left, .scroll-fade-right');
+
+      // Function to check if element is in viewport
+      const elementInView = (el, percentageScroll = 100) => {
+        const elementTop = el.getBoundingClientRect().top;
+        const elementHeight = el.getBoundingClientRect().height;
+
+        return (
+          elementTop <=
+          (window.innerHeight || document.documentElement.clientHeight) * (percentageScroll / 100)
+        );
+      };
+
+      // Function to handle scroll animation
+      const handleScrollAnimation = () => {
+        scrollElements.forEach(el => {
+          if (elementInView(el, 90)) {
+            el.classList.add('scroll-visible');
+          }
+        });
+      };
+
+      // Initial check on page load
+      setTimeout(() => {
+        handleScrollAnimation();
+      }, 300);
+
+      // Listen for scroll events with throttling
+      let scrollTimeout;
+      window.addEventListener('scroll', () => {
+        if (scrollTimeout) {
+          clearTimeout(scrollTimeout);
+        }
+        scrollTimeout = setTimeout(handleScrollAnimation, 50);
+      });
+
+      // Also check on window resize
+      window.addEventListener('resize', handleScrollAnimation);
+    });
+  </script>
+
+  <script src="whatsapp.js"></script>
+</body>
+
+</html>

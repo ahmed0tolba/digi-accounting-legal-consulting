@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title data-i18n="page.title">Features - Digital Support</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" />
+  <!-- Replace Font Awesome script with CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/Features-Blue.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+  <link rel="stylesheet" href="assets/css/Projects-Horizontal.css" />
+  <link rel="stylesheet" href="assets/css/Team-Boxed.css" />
+  <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Additional styling for features page */
+    .feature-icon-box {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, #0dcaf0, #0d6efd);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: white;
+      font-size: 1.8rem;
+      box-shadow: 0 5px 15px rgba(13, 110, 253, 0.2);
+    }
+
+    .feature-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .features-section {
+      padding: 80px 0;
+      background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+    }
+
+    .comparison-table {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      margin-top: 40px;
+    }
+
+    .feature-badge {
+      background: #e7f6fd;
+      color: #0d6efd;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <div class="container">
+      <!-- Desktop Contact + Brand in one row -->
+      <div class="">
+        <!-- Brand -->
+        <a class="navbar-brand logo me-3" href="#" data-i18n="nav.brand">Digital Support</a>
+
+        <!-- Desktop Contact Info -->
+        <div class="contact-info d-none d-lg-flex ms-auto me-4">
+          <a href="tel:+201234567890" class="contact-item me-3">
+            <i class="fa fa-phone"></i>
+            <span class="contact-text d-none d-xl-inline">+20 123 456 7890</span>
+          </a>
+          <a href="mailto:info@digitalsupport.com" class="contact-item me-3">
+            <i class="fa fa-envelope"></i>
+            <span class="contact-text d-none d-xl-inline">info@digitalsupport.com</span>
+          </a>
+          <a href="https://www.google.com/maps?q=30.044420,31.235712&z=15" target="_blank" class="contact-item">
+            <i class="fa fa-map-marker"></i>
+            <span class="contact-text d-none d-xl-inline" data-i18n="nav.location">Cairo, Egypt</span>
+          </a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button data-bs-toggle="collapse" class="navbar-toggler ms-auto" data-bs-target="#navcol-1">
+          <span class="visually-hidden" data-i18n="nav.toggle">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+
+      <!-- Collapsible Content -->
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <!-- Mobile Contact Info -->
+        <div class="mobile-contact d-lg-none mb-3 p-3 bg-light rounded">
+          <div class="contact-info flex-column">
+            <a href="tel:+201234567890" class="contact-item mb-2">
+              <i class="fa fa-phone me-2"></i>
+              <span class="contact-text">+20 123 456 7890</span>
+            </a>
+            <a href="mailto:info@digitalsupport.com" class="contact-item mb-2">
+              <i class="fa fa-envelope me-2"></i>
+              <span class="contact-text">info@digitalsupport.com</span>
+            </a>
+            <a href="https://www.google.com/maps?q=30.044420,31.235712&z=15" target="_blank" class="contact-item">
+              <i class="fa fa-map-marker me-2"></i>
+              <span class="contact-text" data-i18n="nav.location">Cairo, Egypt</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="features.html" data-i18n="nav.features">Features</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html" data-i18n="nav.login">Login</a></li>
+
+          <!-- Language Switcher -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle lang-switcher" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="https://flagcdn.com/w20/gb.png" class="lang-flag" id="current-flag" alt="Language Flag">
+              <span id="current-lang">EN</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item lang-option" href="#" data-lang="en">
+                  <img src="https://flagcdn.com/w20/gb.png" class="lang-flag" alt="English"> English
+                </a></li>
+              <li><a class="dropdown-item lang-option" href="#" data-lang="ar">
+                  <img src="https://flagcdn.com/w20/sa.png" class="lang-flag" alt="العربية"> العربية
+                </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="page">
+    <!-- Hero Section -->
+    <section class="clean-block clean-hero features-hero" style="
+          background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+          color: #fff;
+          background-position: center;
+          background-size: cover;
+          min-height: 60vh;
+          position: relative;
+      ">
+      <div class="text" style="position: relative; z-index: 2;">
+        <h2 data-i18n="features.hero.title">Powerful Features for Your Business Growth</h2>
+        <p data-i18n="features.hero.subtitle">
+          Discover how our comprehensive suite of digital solutions can transform your business operations and drive
+          success.
+        </p>
+        <button class="btn btn-outline-light btn-lg mt-3" type="button" data-i18n="features.hero.button">
+          Explore All Features
+        </button>
+      </div>
+      <div style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(9, 162, 255, 0.7);
+          z-index: 1;
+        "></div>
+    </section>
+
+    <!-- Main Features Section -->
+    <section class="clean-block features features-section">
+      <div class="container">
+        <div class="block-heading">
+          <h2 class="text-info" data-i18n="features.main.title">Core Features</h2>
+          <p data-i18n="features.main.subtitle">
+            Our platform combines cutting-edge technology with practical solutions to meet your business needs.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <!-- Feature 1 -->
+          <div class="col-md-5 feature-box mb-4">
+            <div class="feature-card card shadow-sm p-4 h-100">
+              <div class="feature-icon-box">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h4 data-i18n="features.main.1.title">Real-Time Analytics Dashboard</h4>
+              <div class="feature-badge" data-i18n="features.main.1.badge">Most Popular</div>
+              <p data-i18n="features.main.1.description">
+                Monitor your business performance with interactive dashboards that update in real-time. Track KPIs,
+                sales trends, and customer behavior with customizable reports.
+              </p>
+              <ul class="list-unstyled mt-3">
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <span
+                    data-i18n="features.main.1.bullet1">Live data visualization</span></li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <span
+                    data-i18n="features.main.1.bullet2">Customizable metrics</span></li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <span
+                    data-i18n="features.main.1.bullet3">Export to PDF/Excel</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="col-md-5 feature-box mb-4">
+            <div class="feature-card card shadow-sm p-4 h-100">
+              <div class="feature-icon-box">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h4 data-i18n="features.main.2.title">Mobile-First Design</h4>
+              <div class="feature-badge" data-i18n="features.main.2.badge">Responsive</div>
+              <p data-i18n="features.main.2.description">
+                Access your business tools anywhere, anytime with our fully responsive mobile application. Works
+                seamlessly across all devices and screen sizes.
+              </p>
+              <ul class="list-unstyled mt-3">
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <span
+                    data-i18n="features.main.2.bullet1">iOS & Android apps</span></li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <span
+                    data-i18n="features.main.2.bullet2">Push notifications</span></li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <span
+                    data-i18n="features.main.2.bullet3">Offline mode support</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="col-md-5 feature-box mb-4">
+            <div class="feature-card card shadow-sm p-4 h-100">
+              <div class="feature-icon-box">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h4 data-i18n="features.main.3.title">Advanced Security Suite</h4>
+              <div class="feature-badge" data-i18n="features.main.3.badge">Enterprise Grade</div>
+              <p data-i18n="features.main.3.description">
+                Protect your data with military-grade encryption, multi-factor authentication, and comprehensive audit
+                trails. GDPR compliant with regular security updates.
+              </p>
+              <ul class="list-unstyled mt-3">
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <span
+                    data-i18n="features.main.3.bullet1">256-bit encryption</span></li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <span
+                    data-i18n="features.main.3.bullet2">Multi-factor authentication</span></li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <span
+                    data-i18n="features.main.3.bullet3">Regular security audits</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="col-md-5 feature-box mb-4">
+            <div class="feature-card card shadow-sm p-4 h-100">
+              <div class="feature-icon-box">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h4 data-i18n="features.main.4.title">AI-Powered Automation</h4>
+              <div class="feature-badge" data-i18n="features.main.4.badge">Smart AI</div>
+              <p data-i18n="features.main.4.description">
+                Automate repetitive tasks with intelligent workflows. Our AI engine learns from your patterns to
+                optimize processes and reduce manual work.
+              </p>
+              <ul class="list-unstyled mt-3">
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <span
+                    data-i18n="features.main.4.bullet1">Smart workflow automation</span></li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <span
+                    data-i18n="features.main.4.bullet2">Predictive analytics</span></li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <span
+                    data-i18n="features.main.4.bullet3">Natural language processing</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Features Section -->
+    <section class="clean-block bg-light">
+      <div class="container">
+        <div class="block-heading">
+          <h2 class="text-info" data-i18n="features.additional.title">Additional Capabilities</h2>
+          <p data-i18n="features.additional.subtitle">
+            Enhance your operations with these powerful supporting features.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="feature-icon-box mb-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <h5 data-i18n="features.additional.1.title">Cloud Integration</h5>
+                <p data-i18n="features.additional.1.description">
+                  Seamlessly connect with Google Drive, Dropbox, and other cloud storage services for easy file
+                  management.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="feature-icon-box mb-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                  <i class="fas fa-users-cog"></i>
+                </div>
+                <h5 data-i18n="features.additional.2.title">Team Collaboration</h5>
+                <p data-i18n="features.additional.2.description">
+                  Real-time collaboration tools, task assignment, and communication channels for remote teams.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="feature-icon-box mb-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                  <i class="fas fa-plug"></i>
+                </div>
+                <h5 data-i18n="features.additional.3.title">API Access</h5>
+                <p data-i18n="features.additional.3.description">
+                  Full REST API for custom integrations with your existing software stack and third-party applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Comparison -->
+    <section class="clean-block">
+      <div class="container">
+        <div class="block-heading">
+          <h2 class="text-info" data-i18n="features.comparison.title">Feature Comparison</h2>
+          <p data-i18n="features.comparison.subtitle">
+            Choose the right plan with the features you need.
+          </p>
+        </div>
+
+        <div class="comparison-table">
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col" data-i18n="features.comparison.feature">Feature</th>
+                  <th scope="col" class="text-center" data-i18n="features.comparison.basic">Basic</th>
+                  <th scope="col" class="text-center" data-i18n="features.comparison.pro">Professional</th>
+                  <th scope="col" class="text-center" data-i18n="features.comparison.enterprise">Enterprise</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-i18n="features.comparison.rows.realtime">Real-Time Analytics</td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                </tr>
+                <tr>
+                  <td data-i18n="features.comparison.rows.mobile">Mobile App Access</td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                </tr>
+                <tr>
+                  <td data-i18n="features.comparison.rows.security">Advanced Security</td>
+                  <td class="text-center"><i class="fas fa-times text-muted"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                </tr>
+                <tr>
+                  <td data-i18n="features.comparison.rows.ai">AI Automation</td>
+                  <td class="text-center"><i class="fas fa-times text-muted"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                </tr>
+                <tr>
+                  <td data-i18n="features.comparison.rows.cloud">Cloud Integration</td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                </tr>
+                <tr>
+                  <td data-i18n="features.comparison.rows.api">API Access</td>
+                  <td class="text-center"><i class="fas fa-times text-muted"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                </tr>
+                <tr>
+                  <td data-i18n="features.comparison.rows.support">24/7 Premium Support</td>
+                  <td class="text-center"><i class="fas fa-times text-muted"></i></td>
+                  <td class="text-center"><i class="fas fa-times text-muted"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h5 data-i18n="footer.get_started">Get started</h5>
+          <ul>
+            <li><a href="index.html" data-i18n="footer.home">Home</a></li>
+            <li><a href="pricing.html" data-i18n="footer.sign_up">Sign up</a></li>
+            <li><a href="features.html" data-i18n="footer.downloads">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h5 data-i18n="footer.about_us">About us</h5>
+          <ul>
+            <li><a href="#" data-i18n="footer.company_info">Company Information</a></li>
+            <li><a href="#" data-i18n="footer.contact_us">Contact us</a></li>
+            <li><a href="#" data-i18n="footer.reviews">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h5 data-i18n="footer.support">Support</h5>
+          <ul>
+            <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+            <li><a href="#" data-i18n="footer.help_desk">Help desk</a></li>
+            <li><a href="#" data-i18n="footer.forums">Forums</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h5 data-i18n="footer.legal">Legal</h5>
+          <ul>
+            <li><a href="#" data-i18n="footer.terms_service">Terms of Service</a></li>
+            <li><a href="#" data-i18n="footer.terms_use">Terms of Use</a></li>
+            <li><a href="#" data-i18n="footer.privacy_policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p data-i18n="footer.copyright">© 2024 Digital Support. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+  <script src="assets/js/vanilla-zoom.js"></script>
+  <script src="assets/js/theme.js"></script>
+
+  <script>
+    // Define translation dictionaries
+    const translations = {
+      en: {
+        // Page Meta
+        "page.title": "Features - Digital Support",
+        // Navigation
+        "nav.brand": "Digital Support",
+        "nav.toggle": "Toggle navigation",
+        "nav.home": "Home",
+        "nav.features": "Features",
+        "nav.projects": "Projects",
+        "nav.pricing": "Pricing",
+        "nav.login": "Login",
+        "nav.location": "Cairo, Egypt",
+        // Features Hero
+        "features.hero.title": "Powerful Features for Your Business Growth",
+        "features.hero.subtitle": "Discover how our comprehensive suite of digital solutions can transform your business operations and drive success.",
+        "features.hero.button": "Explore All Features",
+        // Main Features
+        "features.main.title": "Core Features",
+        "features.main.subtitle": "Our platform combines cutting-edge technology with practical solutions to meet your business needs.",
+        "features.main.1.title": "Real-Time Analytics Dashboard",
+        "features.main.1.badge": "Most Popular",
+        "features.main.1.description": "Monitor your business performance with interactive dashboards that update in real-time. Track KPIs, sales trends, and customer behavior with customizable reports.",
+        "features.main.1.bullet1": "Live data visualization",
+        "features.main.1.bullet2": "Customizable metrics",
+        "features.main.1.bullet3": "Export to PDF/Excel",
+        "features.main.2.title": "Mobile-First Design",
+        "features.main.2.badge": "Responsive",
+        "features.main.2.description": "Access your business tools anywhere, anytime with our fully responsive mobile application. Works seamlessly across all devices and screen sizes.",
+        "features.main.2.bullet1": "iOS & Android apps",
+        "features.main.2.bullet2": "Push notifications",
+        "features.main.2.bullet3": "Offline mode support",
+        "features.main.3.title": "Advanced Security Suite",
+        "features.main.3.badge": "Enterprise Grade",
+        "features.main.3.description": "Protect your data with military-grade encryption, multi-factor authentication, and comprehensive audit trails. GDPR compliant with regular security updates.",
+        "features.main.3.bullet1": "256-bit encryption",
+        "features.main.3.bullet2": "Multi-factor authentication",
+        "features.main.3.bullet3": "Regular security audits",
+        "features.main.4.title": "AI-Powered Automation",
+        "features.main.4.badge": "Smart AI",
+        "features.main.4.description": "Automate repetitive tasks with intelligent workflows. Our AI engine learns from your patterns to optimize processes and reduce manual work.",
+        "features.main.4.bullet1": "Smart workflow automation",
+        "features.main.4.bullet2": "Predictive analytics",
+        "features.main.4.bullet3": "Natural language processing",
+        // Additional Features
+        "features.additional.title": "Additional Capabilities",
+        "features.additional.subtitle": "Enhance your operations with these powerful supporting features.",
+        "features.additional.1.title": "Cloud Integration",
+        "features.additional.1.description": "Seamlessly connect with Google Drive, Dropbox, and other cloud storage services for easy file management.",
+        "features.additional.2.title": "Team Collaboration",
+        "features.additional.2.description": "Real-time collaboration tools, task assignment, and communication channels for remote teams.",
+        "features.additional.3.title": "API Access",
+        "features.additional.3.description": "Full REST API for custom integrations with your existing software stack and third-party applications.",
+        // Features Comparison
+        "features.comparison.title": "Feature Comparison",
+        "features.comparison.subtitle": "Choose the right plan with the features you need.",
+        "features.comparison.feature": "Feature",
+        "features.comparison.basic": "Basic",
+        "features.comparison.pro": "Professional",
+        "features.comparison.enterprise": "Enterprise",
+        "features.comparison.rows.realtime": "Real-Time Analytics",
+        "features.comparison.rows.mobile": "Mobile App Access",
+        "features.comparison.rows.security": "Advanced Security",
+        "features.comparison.rows.ai": "AI Automation",
+        "features.comparison.rows.cloud": "Cloud Integration",
+        "features.comparison.rows.api": "API Access",
+        "features.comparison.rows.support": "24/7 Premium Support",
+        // Footer
+        "footer.get_started": "Get started",
+        "footer.home": "Home",
+        "footer.sign_up": "Sign up",
+        "footer.downloads": "Features",
+        "footer.about_us": "About us",
+        "footer.company_info": "Company Information",
+        "footer.contact_us": "Contact us",
+        "footer.reviews": "Reviews",
+        "footer.support": "Support",
+        "footer.faq": "FAQ",
+        "footer.help_desk": "Help desk",
+        "footer.forums": "Forums",
+        "footer.legal": "Legal",
+        "footer.terms_service": "Terms of Service",
+        "footer.terms_use": "Terms of Use",
+        "footer.privacy_policy": "Privacy Policy",
+        "footer.copyright": "© 2024 Digital Support. All rights reserved."
+      },
+      ar: {
+        // Page Meta
+        "page.title": "المميزات - الدعم الرقمي",
+        // Navigation
+        "nav.brand": "الدعم الرقمي",
+        "nav.toggle": "تبديل التنقل",
+        "nav.home": "الرئيسية",
+        "nav.features": "المميزات",
+        "nav.projects": "المشاريع",
+        "nav.pricing": "التسعير",
+        "nav.login": "تسجيل الدخول",
+        "nav.location": "القاهرة، مصر",
+        // Features Hero
+        "features.hero.title": "مميزات قوية لنمو عملك",
+        "features.hero.subtitle": "اكتشف كيف يمكن لمجموعة حلولنا الرقمية الشاملة تحويل عمليات عملك ودفع النجاح.",
+        "features.hero.button": "استكشاف جميع المميزات",
+        // Main Features
+        "features.main.title": "المميزات الأساسية",
+        "features.main.subtitle": "تجمع منصتنا بين أحدث التقنيات والحلول العملية لتلبية احتياجات عملك.",
+        "features.main.1.title": "لوحة تحليل البيانات في الوقت الفعلي",
+        "features.main.1.badge": "الأكثر شيوعاً",
+        "features.main.1.description": "راقب أداء عملك مع لوحات تحكم تفاعلية يتم تحديثها في الوقت الفعلي. تتبع مؤشرات الأداء الرئيسية واتجاهات المبيعات وسلوك العملاء مع تقارير قابلة للتخصيص.",
+        "features.main.1.bullet1": "تصور البيانات المباشرة",
+        "features.main.1.bullet2": "مقاييس قابلة للتخصيص",
+        "features.main.1.bullet3": "تصدير إلى PDF/Excel",
+        "features.main.2.title": "تصميم موجه للجوال أولاً",
+        "features.main.2.badge": "متجاوب",
+        "features.main.2.description": "الوصول إلى أدوات عملك في أي مكان وفي أي وقت مع تطبيقنا المحمول المتجاوب بالكامل. يعمل بسلاسة عبر جميع الأجهزة وأحجام الشاشات.",
+        "features.main.2.bullet1": "تطبيقات iOS و Android",
+        "features.main.2.bullet2": "إشعارات دفع",
+        "features.main.2.bullet3": "دعم وضع عدم الاتصال",
+        "features.main.3.title": "مجموعة الأمان المتقدمة",
+        "features.main.3.badge": "مستوى المؤسسات",
+        "features.main.3.description": "احمِ بياناتك مع تشفير عسكري المستوى، ومصادقة متعددة العوامل، ومسارات تدقيق شاملة. متوافق مع GDPR مع تحديثات أمنية منتظمة.",
+        "features.main.3.bullet1": "تشفير 256-بت",
+        "features.main.3.bullet2": "المصادقة متعددة العوامل",
+        "features.main.3.bullet3": "مراجعات أمنية منتظمة",
+        "features.main.4.title": "الأتمتة المدعومة بالذكاء الاصطناعي",
+        "features.main.4.badge": "ذكاء اصطناعي ذكي",
+        "features.main.4.description": "أتمتة المهام المتكررة مع سير عمل ذكية. يتعلم محرك الذكاء الاصطناعي لدينا من أنماطك لتحسين العمليات وتقليل العمل اليدوي.",
+        "features.main.4.bullet1": "أتمتة سير العمل الذكية",
+        "features.main.4.bullet2": "تحليلات تنبؤية",
+        "features.main.4.bullet3": "معالجة اللغة الطبيعية",
+        // Additional Features
+        "features.additional.title": "قدرات إضافية",
+        "features.additional.subtitle": "عزز عملياتك مع هذه المميزات الداعمة القوية.",
+        "features.additional.1.title": "تكامل السحابة",
+        "features.additional.1.description": "التوصيل السلس مع Google Drive وDropbox وخدمات تخزين السحابة الأخرى لإدارة الملفات بسهولة.",
+        "features.additional.2.title": "تعاون الفريق",
+        "features.additional.2.description": "أدوات التعاون في الوقت الفعلي، وتكليف المهام، وقنوات الاتصال للفرق عن بعد.",
+        "features.additional.3.title": "وصول API",
+        "features.additional.3.description": "واجهة برمجة تطبيقات REST كاملة للتكامل المخصص مع مجموعة برامجك الحالية والتطبيقات الخارجية.",
+        // Features Comparison
+        "features.comparison.title": "مقارنة المميزات",
+        "features.comparison.subtitle": "اختر الخطة المناسبة بالمميزات التي تحتاجها.",
+        "features.comparison.feature": "الميزة",
+        "features.comparison.basic": "الأساسي",
+        "features.comparison.pro": "المحترف",
+        "features.comparison.enterprise": "المؤسسة",
+        "features.comparison.rows.realtime": "تحليل البيانات في الوقت الفعلي",
+        "features.comparison.rows.mobile": "الوصول لتطبيق الجوال",
+        "features.comparison.rows.security": "الأمان المتقدم",
+        "features.comparison.rows.ai": "أتمتة الذكاء الاصطناعي",
+        "features.comparison.rows.cloud": "تكامل السحابة",
+        "features.comparison.rows.api": "وصول API",
+        "features.comparison.rows.support": "دعم مميز 24/7",
+        // Footer
+        "footer.get_started": "ابدأ",
+        "footer.home": "الرئيسية",
+        "footer.sign_up": "اشتراك",
+        "footer.downloads": "المميزات",
+        "footer.about_us": "من نحن",
+        "footer.company_info": "معلومات الشركة",
+        "footer.contact_us": "اتصل بنا",
+        "footer.reviews": "المراجعات",
+        "footer.support": "الدعم",
+        "footer.faq": "الأسئلة الشائعة",
+        "footer.help_desk": "مكتب المساعدة",
+        "footer.forums": "المنتديات",
+        "footer.legal": "قانوني",
+        "footer.terms_service": "شروط الخدمة",
+        "footer.terms_use": "شروط الاستخدام",
+        "footer.privacy_policy": "سياسة الخصوصية",
+        "footer.copyright": "© 2024 الدعم الرقمي. جميع الحقوق محفوظة."
+      }
+    };
+
+    // Cookie helper functions
+    function setCookie(name, value, days) {
+      // Actually using localStorage
+      localStorage.setItem(name, value);
+    }
+
+    function getCookie(name) {
+      const value = localStorage.getItem(name);
+      return value;
+    }
+
+    // Core translation function
+    function loadLanguage(lang) {
+
+      // 1. Set HTML language and direction attributes
+      document.documentElement.setAttribute('lang', lang);
+      if (lang === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.body.classList.add('rtl');
+      } else {
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.body.classList.remove('rtl');
+      }
+
+      // 2. Update all elements with data-i18n attributes
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          if (element.hasAttribute('placeholder')) {
+            element.setAttribute('placeholder', translations[lang][key]);
+          } else {
+            element.textContent = translations[lang][key];
+          }
+        }
+      });
+
+      // 3. Update the language switcher UI
+      const currentFlag = document.getElementById('current-flag');
+      const currentLangText = document.getElementById('current-lang');
+      if (lang === 'ar') {
+        currentFlag.src = 'https://flagcdn.com/w20/sa.png';
+        currentFlag.alt = 'العربية';
+        currentLangText.textContent = 'AR';
+      } else {
+        currentFlag.src = 'https://flagcdn.com/w20/gb.png';
+        currentFlag.alt = 'English';
+        currentLangText.textContent = 'EN';
+      }
+
+      // 4. Save preference to cookie (expires in 30 days)
+      setCookie('preferred-language', lang, 30);
+    }
+
+    // Initialize language on page load
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Check for saved preference in cookie
+      const savedLang = getCookie('preferred-language');
+
+      // If no cookie exists, check browser language
+      const browserLang = navigator.language.startsWith('ar') ? 'ar' : 'en';
+
+      const defaultLang = savedLang || browserLang;
+
+      loadLanguage(defaultLang);
+
+      // Set up click handlers for language switcher options
+      document.querySelectorAll('.lang-option').forEach(option => {
+        option.addEventListener('click', function (e) {
+          e.preventDefault();
+          const selectedLang = this.getAttribute('data-lang');
+          loadLanguage(selectedLang);
+        });
+      });
+    });
+
+  </script>
+
+  <script>
+    // Scroll reveal animation
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all elements with scroll animation classes
+      const scrollElements = document.querySelectorAll('.scroll-fade, .scroll-fade-left, .scroll-fade-right');
+
+      // Function to check if element is in viewport
+      const elementInView = (el, percentageScroll = 100) => {
+        const elementTop = el.getBoundingClientRect().top;
+        const elementHeight = el.getBoundingClientRect().height;
+
+        return (
+          elementTop <=
+          (window.innerHeight || document.documentElement.clientHeight) * (percentageScroll / 100)
+        );
+      };
+
+      // Function to handle scroll animation
+      const handleScrollAnimation = () => {
+        scrollElements.forEach(el => {
+          if (elementInView(el, 90)) {
+            el.classList.add('scroll-visible');
+          }
+        });
+      };
+
+      // Initial check on page load
+      setTimeout(() => {
+        handleScrollAnimation();
+      }, 300);
+
+      // Listen for scroll events with throttling
+      let scrollTimeout;
+      window.addEventListener('scroll', () => {
+        if (scrollTimeout) {
+          clearTimeout(scrollTimeout);
+        }
+        scrollTimeout = setTimeout(handleScrollAnimation, 50);
+      });
+
+      // Also check on window resize
+      window.addEventListener('resize', handleScrollAnimation);
+    });
+  </script>
+
+  <script src="whatsapp.js"></script>
+</body>
+
+</html>

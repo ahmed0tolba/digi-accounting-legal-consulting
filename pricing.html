@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title data-i18n="page.title">Pricing - Digital Support</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i"
+    />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css" />
+    <link rel="stylesheet" href="assets/css/Features-Blue.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/Projects-Horizontal.css" />
+    <link rel="stylesheet" href="assets/css/Team-Boxed.css" />
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    
+    <style>
+      /* Pricing page specific styling */
+      .pricing-hero {
+        background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+        color: white;
+        padding: 100px 0 60px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      
+      .clean-pricing-item {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        height: 100%;
+        position: relative;
+      }
+      
+      .clean-pricing-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+      }
+      
+      .clean-pricing-item .heading {
+        background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+        color: white;
+        padding: 25px 20px;
+      }
+      
+      .clean-pricing-item .price {
+        padding: 20px;
+        background: #f8f9fa;
+      }
+      
+      .clean-pricing-item .price h4 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #0d6efd;
+        margin: 0;
+      }
+      
+      .price-period {
+        font-size: 1rem;
+        color: #666;
+        font-weight: normal;
+      }
+      
+      .clean-pricing-item .features {
+        padding: 25px 20px;
+      }
+      
+      .feature-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        color: #333;
+      }
+      
+      .feature-item i {
+        color: #0dcaf0;
+        margin-right: 10px;
+        font-size: 0.9rem;
+      }
+      
+      .feature-item.unavailable {
+        color: #999;
+      }
+      
+      .feature-item.unavailable i {
+        color: #ccc;
+      }
+      
+      .ribbon {
+        position: absolute;
+        top: 20px;
+        right: -35px;
+        background: #ff6b6b;
+        color: white;
+        padding: 8px 40px;
+        transform: rotate(45deg);
+        font-weight: 600;
+        font-size: 0.9rem;
+        box-shadow: 0 3px 10px rgba(255, 107, 107, 0.3);
+      }
+      
+      .pricing-currency {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+      
+      .currency-btn {
+        border: 2px solid #0d6efd;
+        background: white;
+        color: #0d6efd;
+        padding: 8px 20px;
+        margin: 0 5px;
+        border-radius: 25px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      
+      .currency-btn.active {
+        background: #0d6efd;
+        color: white;
+      }
+      
+      .currency-btn:hover:not(.active) {
+        background: #e7f6fd;
+      }
+      
+      .faq-section {
+        background: #f8f9fa;
+        padding: 80px 0;
+        margin-top: 60px;
+      }
+      
+      .faq-item {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+    </style>
+  </head>
+  
+
+  <body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+      <div class="container">
+        <!-- Desktop Contact + Brand in one row -->
+        <div class="">
+          <!-- Brand -->
+          <a class="navbar-brand logo me-3" href="#" data-i18n="nav.brand">Digital Support</a>
+
+          <!-- Desktop Contact Info -->
+          <div class="contact-info d-none d-lg-flex ms-auto me-4">
+            <a href="tel:+201234567890" class="contact-item me-3">
+              <i class="fa fa-phone"></i>
+              <span class="contact-text d-none d-xl-inline">+20 123 456 7890</span>
+            </a>
+            <a href="mailto:info@digitalsupport.com" class="contact-item me-3">
+              <i class="fa fa-envelope"></i>
+              <span class="contact-text d-none d-xl-inline">info@digitalsupport.com</span>
+            </a>
+            <a href="https://www.google.com/maps?q=30.044420,31.235712&z=15" target="_blank" class="contact-item">
+              <i class="fa fa-map-marker"></i>
+              <span class="contact-text d-none d-xl-inline" data-i18n="nav.location">Cairo, Egypt</span>
+            </a>
+          </div>
+
+          <!-- Mobile Toggle -->
+          <button data-bs-toggle="collapse" class="navbar-toggler ms-auto" data-bs-target="#navcol-1">
+            <span class="visually-hidden" data-i18n="nav.toggle">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <!-- Collapsible Content -->
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <!-- Mobile Contact Info -->
+          <div class="mobile-contact d-lg-none mb-3 p-3 bg-light rounded">
+            <div class="contact-info flex-column">
+              <a href="tel:+201234567890" class="contact-item mb-2">
+                <i class="fa fa-phone me-2"></i>
+                <span class="contact-text">+20 123 456 7890</span>
+              </a>
+              <a href="mailto:info@digitalsupport.com" class="contact-item mb-2">
+                <i class="fa fa-envelope me-2"></i>
+                <span class="contact-text">info@digitalsupport.com</span>
+              </a>
+              <a href="https://www.google.com/maps?q=30.044420,31.235712&z=15" target="_blank" class="contact-item">
+                <i class="fa fa-map-marker me-2"></i>
+                <span class="contact-text" data-i18n="nav.location">Cairo, Egypt</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Navigation Menu -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="features.html" data-i18n="nav.features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html" data-i18n="nav.projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link active" href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html" data-i18n="nav.login">Login</a></li>
+
+            <!-- Language Switcher -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle lang-switcher" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="https://flagcdn.com/w20/gb.png" class="lang-flag" id="current-flag" alt="Language Flag">
+                <span id="current-lang">EN</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item lang-option" href="#" data-lang="en">
+                    <img src="https://flagcdn.com/w20/gb.png" class="lang-flag" alt="English"> English
+                  </a></li>
+                <li><a class="dropdown-item lang-option" href="#" data-lang="ar">
+                    <img src="https://flagcdn.com/w20/sa.png" class="lang-flag" alt="العربية"> العربية
+                  </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Pricing Hero Section -->
+    <section class="pricing-hero">
+      <div class="container">
+        <h1 data-i18n="pricing.hero.title">Simple, Transparent Pricing</h1>
+        <p class="lead" data-i18n="pricing.hero.subtitle">
+          Choose the perfect plan for your business needs. All plans include our core features with no hidden fees.
+        </p>
+        <!-- Currency Selector -->
+        <div class="pricing-currency">
+          <button class="currency-btn active" data-currency="usd">USD</button>
+          <button class="currency-btn" data-currency="egp">EGP</button>
+          <button class="currency-btn" data-currency="eur">EUR</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="page pricing-table-page">
+      <section class="clean-block clean-pricing dark">
+        <div class="container">
+          <div class="block-heading text-center">
+            <h2 class="text-info" data-i18n="pricing.main.title">Choose Your Plan</h2>
+            <p data-i18n="pricing.main.subtitle">
+              Flexible pricing designed for businesses of all sizes. Start small and upgrade as you grow.
+            </p>
+          </div>
+          <div class="row justify-content-center">
+            
+            <!-- Basic Plan -->
+            <div class="col-md-5 col-lg-4 mb-4">
+              <div class="clean-pricing-item">
+                <div class="heading">
+                  <h3 data-i18n="pricing.plans.basic.title">STARTUP</h3>
+                </div>
+                <p data-i18n="pricing.plans.basic.description">
+                  Perfect for small businesses and startups getting started with digital transformation.
+                </p>
+                <div class="features">
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.basic.feature1">Up to 5 Users</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.basic.feature2">Basic Analytics Dashboard</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.basic.feature3">10GB Cloud Storage</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.basic.feature4">Email Support</span>
+                  </div>
+                  <div class="feature-item unavailable">
+                    <i class="fas fa-times"></i>
+                    <span data-i18n="pricing.plans.basic.feature5">Advanced Security Features</span>
+                  </div>
+                  <div class="feature-item unavailable">
+                    <i class="fas fa-times"></i>
+                    <span data-i18n="pricing.plans.basic.feature6">Custom API Access</span>
+                  </div>
+                  <div class="feature-item unavailable">
+                    <i class="fas fa-times"></i>
+                    <span data-i18n="pricing.plans.basic.feature7">24/7 Phone Support</span>
+                  </div>
+                </div>
+                <div class="price">
+                  <h4>
+                    <span class="price-value" data-usd="$49" data-egp="1,500 ج.م" data-eur="€45"></span>
+                    <span class="price-period" data-i18n="pricing.per_month">/month</span>
+                  </h4>
+                  <small data-i18n="pricing.billed_yearly">Billed yearly</small>
+                </div>
+                <button class="btn btn-outline-primary d-block w-100 mt-3" type="button" data-i18n="pricing.get_started">
+                  GET STARTED
+                </button>
+              </div>
+            </div>
+
+            <!-- Pro Plan (Best Value) -->
+            <div class="col-md-5 col-lg-4 mb-4">
+              <div class="clean-pricing-item">
+                <div class="ribbon"><span data-i18n="pricing.best_value">Best Value</span></div>
+                <div class="heading">
+                  <h3 data-i18n="pricing.plans.pro.title">BUSINESS</h3>
+                </div>
+                <p data-i18n="pricing.plans.pro.description">
+                  Ideal for growing businesses needing advanced features and priority support.
+                </p>
+                <div class="features">
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.pro.feature1">Up to 25 Users</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.pro.feature2">Advanced Analytics Dashboard</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.pro.feature3">100GB Cloud Storage</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.pro.feature4">Priority Email Support</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.pro.feature5">Advanced Security Features</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.pro.feature6">Limited API Access</span>
+                  </div>
+                  <div class="feature-item unavailable">
+                    <i class="fas fa-times"></i>
+                    <span data-i18n="pricing.plans.pro.feature7">24/7 Phone Support</span>
+                  </div>
+                </div>
+                <div class="price">
+                  <h4>
+                    <span class="price-value" data-usd="$99" data-egp="3,000 ج.م" data-eur="€90"></span>
+                    <span class="price-period" data-i18n="pricing.per_month">/month</span>
+                  </h4>
+                  <small data-i18n="pricing.billed_yearly">Billed yearly</small>
+                </div>
+                <button class="btn btn-primary d-block w-100 mt-3" type="button" data-i18n="pricing.get_started">
+                  GET STARTED
+                </button>
+              </div>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="col-md-5 col-lg-4 mb-4">
+              <div class="clean-pricing-item">
+                <div class="heading">
+                  <h3 data-i18n="pricing.plans.enterprise.title">ENTERPRISE</h3>
+                </div>
+                <p data-i18n="pricing.plans.enterprise.description">
+                  Complete solution for large organizations with custom requirements and dedicated support.
+                </p>
+                <div class="features">
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.enterprise.feature1">Unlimited Users</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.enterprise.feature2">Custom Analytics Dashboard</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.enterprise.feature3">500GB+ Cloud Storage</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.enterprise.feature4">Dedicated Account Manager</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.enterprise.feature5">Enterprise Security Suite</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.enterprise.feature6">Full API Access</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span data-i18n="pricing.plans.enterprise.feature7">24/7 Phone & Chat Support</span>
+                  </div>
+                </div>
+                <div class="price">
+                  <h4>
+                    <span class="price-value" data-usd="$299" data-egp="9,000 ج.م" data-eur="€270"></span>
+                    <span class="price-period" data-i18n="pricing.per_month">/month</span>
+                  </h4>
+                  <small data-i18n="pricing.billed_yearly">Billed yearly</small>
+                </div>
+                <button class="btn btn-outline-primary d-block w-100 mt-3" type="button" data-i18n="pricing.contact_sales">
+                  CONTACT SALES
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- All Plans Include Section -->
+          <div class="row mt-5 pt-5">
+            <div class="col-12 text-center mb-4">
+              <h3 data-i18n="pricing.included.title">All Plans Include</h3>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+              <div class="feature-icon-box mb-3" style="width: 60px; height: 60px; margin: 0 auto; font-size: 1.5rem;">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h5 data-i18n="pricing.included.1.title">SSL Security</h5>
+              <p data-i18n="pricing.included.1.description">Bank-level encryption for all data</p>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+              <div class="feature-icon-box mb-3" style="width: 60px; height: 60px; margin: 0 auto; font-size: 1.5rem;">
+                <i class="fas fa-sync-alt"></i>
+              </div>
+              <h5 data-i18n="pricing.included.2.title">99.9% Uptime</h5>
+              <p data-i18n="pricing.included.2.description">Reliable service with SLA guarantee</p>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+              <div class="feature-icon-box mb-3" style="width: 60px; height: 60px; margin: 0 auto; font-size: 1.5rem;">
+                <i class="fas fa-cloud-upload-alt"></i>
+              </div>
+              <h5 data-i18n="pricing.included.3.title">Daily Backups</h5>
+              <p data-i18n="pricing.included.3.description">Automatic backup of all your data</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <div class="container">
+          <div class="block-heading text-center">
+            <h2 data-i18n="pricing.faq.title">Frequently Asked Questions</h2>
+            <p data-i18n="pricing.faq.subtitle">Find answers to common questions about our pricing and services</p>
+          </div>
+          
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="faq-item">
+                <h5 data-i18n="pricing.faq.1.question">Can I switch plans later?</h5>
+                <p data-i18n="pricing.faq.1.answer">Yes, you can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.</p>
+              </div>
+              <div class="faq-item">
+                <h5 data-i18n="pricing.faq.2.question">Is there a free trial?</h5>
+                <p data-i18n="pricing.faq.2.answer">We offer a 14-day free trial for the Business plan. No credit card required to start your trial.</p>
+              </div>
+              <div class="faq-item">
+                <h5 data-i18n="pricing.faq.3.question">What payment methods do you accept?</h5>
+                <p data-i18n="pricing.faq.3.answer">We accept all major credit cards, PayPal, and bank transfers for annual contracts.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="faq-item">
+                <h5 data-i18n="pricing.faq.4.question">Do you offer discounts for nonprofits?</h5>
+                <p data-i18n="pricing.faq.4.answer">Yes, we offer special pricing for registered nonprofit organizations and educational institutions.</p>
+              </div>
+              <div class="faq-item">
+                <h5 data-i18n="pricing.faq.5.question">Can I cancel anytime?</h5>
+                <p data-i18n="pricing.faq.5.answer">Absolutely. You can cancel your subscription at any time. We'll prorate your refund for the unused portion.</p>
+              </div>
+              <div class="faq-item">
+                <h5 data-i18n="pricing.faq.6.question">Do you offer custom enterprise solutions?</h5>
+                <p data-i18n="pricing.faq.6.answer">Yes, our enterprise plan is fully customizable. Contact our sales team for a tailored solution.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- CTA Section -->
+          <div class="text-center mt-5">
+            <h3 data-i18n="pricing.cta.title">Still have questions?</h3>
+            <p class="mb-4" data-i18n="pricing.cta.subtitle">Our team is ready to help you choose the right plan for your business.</p>
+            <a href="mailto:sales@digitalsupport.com" class="btn btn-primary btn-lg" data-i18n="pricing.cta.button">
+              Contact Sales Team
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h5 data-i18n="footer.get_started">Get started</h5>
+            <ul>
+              <li><a href="index.html" data-i18n="footer.home">Home</a></li>
+              <li><a href="pricing.html" data-i18n="footer.sign_up">Sign up</a></li>
+              <li><a href="features.html" data-i18n="footer.downloads">Features</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5 data-i18n="footer.about_us">About us</h5>
+            <ul>
+              <li><a href="#" data-i18n="footer.company_info">Company Information</a></li>
+              <li><a href="#" data-i18n="footer.contact_us">Contact us</a></li>
+              <li><a href="#" data-i18n="footer.reviews">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5 data-i18n="footer.support">Support</h5>
+            <ul>
+              <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+              <li><a href="#" data-i18n="footer.help_desk">Help desk</a></li>
+              <li><a href="#" data-i18n="footer.forums">Forums</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5 data-i18n="footer.legal">Legal</h5>
+            <ul>
+              <li><a href="#" data-i18n="footer.terms_service">Terms of Service</a></li>
+              <li><a href="#" data-i18n="footer.terms_use">Terms of Use</a></li>
+              <li><a href="#" data-i18n="footer.privacy_policy">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p data-i18n="footer.copyright">© 2024 Digital Support. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+    
+    <script>
+      // Define translation dictionaries
+      const translations = {
+        en: {
+          // Page Meta
+          "page.title": "Pricing - Digital Support",
+          // Navigation
+          "nav.brand": "Digital Support",
+          "nav.toggle": "Toggle navigation",
+          "nav.home": "Home",
+          "nav.features": "Features",
+          "nav.projects": "Projects",
+          "nav.pricing": "Pricing",
+          "nav.login": "Login",
+          "nav.location": "Cairo, Egypt",
+          // Pricing Hero
+          "pricing.hero.title": "Simple, Transparent Pricing",
+          "pricing.hero.subtitle": "Choose the perfect plan for your business needs. All plans include our core features with no hidden fees.",
+          // Main Pricing Section
+          "pricing.main.title": "Choose Your Plan",
+          "pricing.main.subtitle": "Flexible pricing designed for businesses of all sizes. Start small and upgrade as you grow.",
+          // Pricing Plans
+          "pricing.plans.basic.title": "STARTUP",
+          "pricing.plans.basic.description": "Perfect for small businesses and startups getting started with digital transformation.",
+          "pricing.plans.basic.feature1": "Up to 5 Users",
+          "pricing.plans.basic.feature2": "Basic Analytics Dashboard",
+          "pricing.plans.basic.feature3": "10GB Cloud Storage",
+          "pricing.plans.basic.feature4": "Email Support",
+          "pricing.plans.basic.feature5": "Advanced Security Features",
+          "pricing.plans.basic.feature6": "Custom API Access",
+          "pricing.plans.basic.feature7": "24/7 Phone Support",
+          "pricing.plans.pro.title": "BUSINESS",
+          "pricing.plans.pro.description": "Ideal for growing businesses needing advanced features and priority support.",
+          "pricing.plans.pro.feature1": "Up to 25 Users",
+          "pricing.plans.pro.feature2": "Advanced Analytics Dashboard",
+          "pricing.plans.pro.feature3": "100GB Cloud Storage",
+          "pricing.plans.pro.feature4": "Priority Email Support",
+          "pricing.plans.pro.feature5": "Advanced Security Features",
+          "pricing.plans.pro.feature6": "Limited API Access",
+          "pricing.plans.pro.feature7": "24/7 Phone Support",
+          "pricing.plans.enterprise.title": "ENTERPRISE",
+          "pricing.plans.enterprise.description": "Complete solution for large organizations with custom requirements and dedicated support.",
+          "pricing.plans.enterprise.feature1": "Unlimited Users",
+          "pricing.plans.enterprise.feature2": "Custom Analytics Dashboard",
+          "pricing.plans.enterprise.feature3": "500GB+ Cloud Storage",
+          "pricing.plans.enterprise.feature4": "Dedicated Account Manager",
+          "pricing.plans.enterprise.feature5": "Enterprise Security Suite",
+          "pricing.plans.enterprise.feature6": "Full API Access",
+          "pricing.plans.enterprise.feature7": "24/7 Phone & Chat Support",
+          // Pricing Common
+          "pricing.per_month": "/month",
+          "pricing.billed_yearly": "Billed yearly",
+          "pricing.best_value": "Best Value",
+          "pricing.get_started": "GET STARTED",
+          "pricing.contact_sales": "CONTACT SALES",
+          // All Plans Include
+          "pricing.included.title": "All Plans Include",
+          "pricing.included.1.title": "SSL Security",
+          "pricing.included.1.description": "Bank-level encryption for all data",
+          "pricing.included.2.title": "99.9% Uptime",
+          "pricing.included.2.description": "Reliable service with SLA guarantee",
+          "pricing.included.3.title": "Daily Backups",
+          "pricing.included.3.description": "Automatic backup of all your data",
+          // FAQ Section
+          "pricing.faq.title": "Frequently Asked Questions",
+          "pricing.faq.subtitle": "Find answers to common questions about our pricing and services",
+          "pricing.faq.1.question": "Can I switch plans later?",
+          "pricing.faq.1.answer": "Yes, you can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.",
+          "pricing.faq.2.question": "Is there a free trial?",
+          "pricing.faq.2.answer": "We offer a 14-day free trial for the Business plan. No credit card required to start your trial.",
+          "pricing.faq.3.question": "What payment methods do you accept?",
+          "pricing.faq.3.answer": "We accept all major credit cards, PayPal, and bank transfers for annual contracts.",
+          "pricing.faq.4.question": "Do you offer discounts for nonprofits?",
+          "pricing.faq.4.answer": "Yes, we offer special pricing for registered nonprofit organizations and educational institutions.",
+          "pricing.faq.5.question": "Can I cancel anytime?",
+          "pricing.faq.5.answer": "Absolutely. You can cancel your subscription at any time. We'll prorate your refund for the unused portion.",
+          "pricing.faq.6.question": "Do you offer custom enterprise solutions?",
+          "pricing.faq.6.answer": "Yes, our enterprise plan is fully customizable. Contact our sales team for a tailored solution.",
+          // CTA Section
+          "pricing.cta.title": "Still have questions?",
+          "pricing.cta.subtitle": "Our team is ready to help you choose the right plan for your business.",
+          "pricing.cta.button": "Contact Sales Team",
+          // Footer
+          "footer.get_started": "Get started",
+          "footer.home": "Home",
+          "footer.sign_up": "Sign up",
+          "footer.downloads": "Features",
+          "footer.about_us": "About us",
+          "footer.company_info": "Company Information",
+          "footer.contact_us": "Contact us",
+          "footer.reviews": "Reviews",
+          "footer.support": "Support",
+          "footer.faq": "FAQ",
+          "footer.help_desk": "Help desk",
+          "footer.forums": "Forums",
+          "footer.legal": "Legal",
+          "footer.terms_service": "Terms of Service",
+          "footer.terms_use": "Terms of Use",
+          "footer.privacy_policy": "Privacy Policy",
+          "footer.copyright": "© 2024 Digital Support. All rights reserved."
+        },
+        ar: {
+          // Page Meta
+          "page.title": "التسعير - الدعم الرقمي",
+          // Navigation
+          "nav.brand": "الدعم الرقمي",
+          "nav.toggle": "تبديل التنقل",
+          "nav.home": "الرئيسية",
+          "nav.features": "المميزات",
+          "nav.projects": "المشاريع",
+          "nav.pricing": "التسعير",
+          "nav.login": "تسجيل الدخول",
+          "nav.location": "القاهرة، مصر",
+          // Pricing Hero
+          "pricing.hero.title": "أسعار بسيطة وشفافة",
+          "pricing.hero.subtitle": "اختر الخطة المثالية لاحتياجات عملك. جميع الخطط تشمل ميزاتنا الأساسية بدون رسوم خفية.",
+          // Main Pricing Section
+          "pricing.main.title": "اختر خطتك",
+          "pricing.main.subtitle": "أسعار مرنة مصممة للشركات من جميع الأحجام. ابدأ صغيراً وقم بالترقية مع نموك.",
+          // Pricing Plans
+          "pricing.plans.basic.title": "البداية",
+          "pricing.plans.basic.description": "مثالي للشركات الصغيرة والمشاريع الناشئة التي تبدأ في التحول الرقمي.",
+          "pricing.plans.basic.feature1": "حتى 5 مستخدمين",
+          "pricing.plans.basic.feature2": "لوحة تحليلات أساسية",
+          "pricing.plans.basic.feature3": "10 جيجابايت تخزين سحابي",
+          "pricing.plans.basic.feature4": "دعم عبر البريد الإلكتروني",
+          "pricing.plans.basic.feature5": "ميزات أمان متقدمة",
+          "pricing.plans.basic.feature6": "وصول مخصص لواجهة برمجة التطبيقات",
+          "pricing.plans.basic.feature7": "دعم هاتفي 24/7",
+          "pricing.plans.pro.title": "الأعمال",
+          "pricing.plans.pro.description": "مثالي للشركات النامية التي تحتاج إلى ميزات متقدمة ودعم ذي أولوية.",
+          "pricing.plans.pro.feature1": "حتى 25 مستخدم",
+          "pricing.plans.pro.feature2": "لوحة تحليلات متقدمة",
+          "pricing.plans.pro.feature3": "100 جيجابايت تخزين سحابي",
+          "pricing.plans.pro.feature4": "دعم ذو أولوية عبر البريد الإلكتروني",
+          "pricing.plans.pro.feature5": "ميزات أمان متقدمة",
+          "pricing.plans.pro.feature6": "وصول محدود لواجهة برمجة التطبيقات",
+          "pricing.plans.pro.feature7": "دعم هاتفي 24/7",
+          "pricing.plans.enterprise.title": "المؤسسة",
+          "pricing.plans.enterprise.description": "حل كامل للمنظمات الكبيرة مع متطلبات مخصصة ودعم مخصص.",
+          "pricing.plans.enterprise.feature1": "عدد غير محدود من المستخدمين",
+          "pricing.plans.enterprise.feature2": "لوحة تحليلات مخصصة",
+          "pricing.plans.enterprise.feature3": "500+ جيجابايت تخزين سحابي",
+          "pricing.plans.enterprise.feature4": "مدير حسابات مخصص",
+          "pricing.plans.enterprise.feature5": "مجموعة أمان للمؤسسات",
+          "pricing.plans.enterprise.feature6": "وصول كامل لواجهة برمجة التطبيقات",
+          "pricing.plans.enterprise.feature7": "دعم هاتفي ودردشة 24/7",
+          // Pricing Common
+          "pricing.per_month": "/شهر",
+          "pricing.billed_yearly": "فوترة سنوية",
+          "pricing.best_value": "أفضل قيمة",
+          "pricing.get_started": "ابدأ الآن",
+          "pricing.contact_sales": "اتصل بالمبيعات",
+          // All Plans Include
+          "pricing.included.title": "تشمل جميع الخطط",
+          "pricing.included.1.title": "أمان SSL",
+          "pricing.included.1.description": "تشفير على مستوى البنوك لجميع البيانات",
+          "pricing.included.2.title": "نسبة تشغيل 99.9%",
+          "pricing.included.2.description": "خدمة موثوقة مع ضمان اتفاقية مستوى الخدمة",
+          "pricing.included.3.title": "نسخ احتياطي يومي",
+          "pricing.included.3.description": "نسخ احتياطي تلقائي لجميع بياناتك",
+          // FAQ Section
+          "pricing.faq.title": "الأسئلة الشائعة",
+          "pricing.faq.subtitle": "ابحث عن إجابات للأسئلة الشائعة حول أسعارنا وخدماتنا",
+          "pricing.faq.1.question": "هل يمكنني تغيير الخطة لاحقاً؟",
+          "pricing.faq.1.answer": "نعم، يمكنك ترقية أو خفض مستوى خطتك في أي وقت. التغييرات سارية المفعول بداية دورتك الفوترة التالية.",
+          "pricing.faq.2.question": "هل هناك نسخة تجريبية مجانية؟",
+          "pricing.faq.2.answer": "نقدم نسخة تجريبية مجانية لمدة 14 يومًا لخطة الأعمال. لا يلزم وجود بطاقة ائتمان لبدء تجربتك.",
+          "pricing.faq.3.question": "ما هي طرق الدفع التي تقبلونها؟",
+          "pricing.faq.3.answer": "نقبل جميع بطاقات الائتمان الرئيسية وباي بال والتحويلات المصرفية للعقود السنوية.",
+          "pricing.faq.4.question": "هل تقدمون خصومات للمنظمات غير الربحية؟",
+          "pricing.faq.4.answer": "نعم، نقدم أسعارًا خاصة للمنظمات غير الربحية المسجلة والمؤسسات التعليمية.",
+          "pricing.faq.5.question": "هل يمكنني الإلغاء في أي وقت؟",
+          "pricing.faq.5.answer": "بالتأكيد. يمكنك إلغاء اشتراكك في أي وقت. سنرد لك المبلغ المتبقي للجزء غير المستخدم.",
+          "pricing.faq.6.question": "هل تقدمون حلول مؤسسات مخصصة؟",
+          "pricing.faq.6.answer": "نعم، يمكن تخصيص خطة المؤسسة بالكامل. اتصل بفريق المبيعات للحصول على حل مخصص.",
+          // CTA Section
+          "pricing.cta.title": "لا تزال لديك أسئلة؟",
+          "pricing.cta.subtitle": "فريقنا جاهز لمساعدتك في اختيار الخطة المناسبة لعملك.",
+          "pricing.cta.button": "اتصل بفريق المبيعات",
+          // Footer
+          "footer.get_started": "ابدأ",
+          "footer.home": "الرئيسية",
+          "footer.sign_up": "اشتراك",
+          "footer.downloads": "المميزات",
+          "footer.about_us": "من نحن",
+          "footer.company_info": "معلومات الشركة",
+          "footer.contact_us": "اتصل بنا",
+          "footer.reviews": "المراجعات",
+          "footer.support": "الدعم",
+          "footer.faq": "الأسئلة الشائعة",
+          "footer.help_desk": "مكتب المساعدة",
+          "footer.forums": "المنتديات",
+          "footer.legal": "قانوني",
+          "footer.terms_service": "شروط الخدمة",
+          "footer.terms_use": "شروط الاستخدام",
+          "footer.privacy_policy": "سياسة الخصوصية",
+          "footer.copyright": "© 2024 الدعم الرقمي. جميع الحقوق محفوظة."
+        }
+      };
+
+      // Cookie helper functions
+      function setCookie(name, value, days) {
+        // Actually using localStorage
+        localStorage.setItem(name, value);
+      }
+
+      function getCookie(name) {
+        const value = localStorage.getItem(name);
+        return value;
+      }
+
+      // Core translation function
+      function loadLanguage(lang) {
+        // 1. Set HTML language and direction attributes
+        document.documentElement.setAttribute('lang', lang);
+        if (lang === 'ar') {
+          document.documentElement.setAttribute('dir', 'rtl');
+          document.body.classList.add('rtl');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+          document.body.classList.remove('rtl');
+        }
+
+        // 2. Update all elements with data-i18n attributes
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+          const key = element.getAttribute('data-i18n');
+          if (translations[lang] && translations[lang][key]) {
+            if (element.hasAttribute('placeholder')) {
+              element.setAttribute('placeholder', translations[lang][key]);
+            } else {
+              element.textContent = translations[lang][key];
+            }
+          }
+        });
+
+        // 3. Update the language switcher UI
+        const currentFlag = document.getElementById('current-flag');
+        const currentLangText = document.getElementById('current-lang');
+        if (lang === 'ar') {
+          currentFlag.src = 'https://flagcdn.com/w20/sa.png';
+          currentFlag.alt = 'العربية';
+          currentLangText.textContent = 'AR';
+        } else {
+          currentFlag.src = 'https://flagcdn.com/w20/gb.png';
+          currentFlag.alt = 'English';
+          currentLangText.textContent = 'EN';
+        }
+
+        // 4. Save preference to cookie (expires in 30 days)
+        setCookie('preferred-language', lang, 30);
+      }
+
+      // Currency switching functionality
+      function setupCurrencySwitcher() {
+        const currencyBtns = document.querySelectorAll('.currency-btn');
+        const priceValues = document.querySelectorAll('.price-value');
+        
+        currencyBtns.forEach(btn => {
+          btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            currencyBtns.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Get selected currency
+            const currency = this.getAttribute('data-currency');
+            
+            // Update all price values
+            priceValues.forEach(priceElement => {
+              const price = priceElement.getAttribute(`data-${currency}`);
+              priceElement.textContent = price;
+            });
+          });
+        });
+      }
+
+      // Initialize language on page load
+      document.addEventListener('DOMContentLoaded', function () {
+        // Check for saved preference in cookie
+        const savedLang = getCookie('preferred-language');
+
+        // If no cookie exists, check browser language
+        const browserLang = navigator.language.startsWith('ar') ? 'ar' : 'en';
+
+        const defaultLang = savedLang || browserLang;
+
+        loadLanguage(defaultLang);
+        
+        // Setup currency switcher
+        setupCurrencySwitcher();
+
+        // Set up click handlers for language switcher options
+        document.querySelectorAll('.lang-option').forEach(option => {
+          option.addEventListener('click', function (e) {
+            e.preventDefault();
+            const selectedLang = this.getAttribute('data-lang');
+            loadLanguage(selectedLang);
+          });
+        });
+      });
+
+    </script>
+
+    <script>
+      // Scroll reveal animation
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get all elements with scroll animation classes
+        const scrollElements = document.querySelectorAll('.scroll-fade, .scroll-fade-left, .scroll-fade-right');
+
+        // Function to check if element is in viewport
+        const elementInView = (el, percentageScroll = 100) => {
+          const elementTop = el.getBoundingClientRect().top;
+          const elementHeight = el.getBoundingClientRect().height;
+
+          return (
+            elementTop <=
+            (window.innerHeight || document.documentElement.clientHeight) * (percentageScroll / 100)
+          );
+        };
+
+        // Function to handle scroll animation
+        const handleScrollAnimation = () => {
+          scrollElements.forEach(el => {
+            if (elementInView(el, 90)) {
+              el.classList.add('scroll-visible');
+            }
+          });
+        };
+
+        // Initial check on page load
+        setTimeout(() => {
+          handleScrollAnimation();
+        }, 300);
+
+        // Listen for scroll events with throttling
+        let scrollTimeout;
+        window.addEventListener('scroll', () => {
+          if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+          }
+          scrollTimeout = setTimeout(handleScrollAnimation, 50);
+        });
+
+        // Also check on window resize
+        window.addEventListener('resize', handleScrollAnimation);
+      });
+    </script>
+
+    <script src="whatsapp.js"></script>
+  </body>
+</html>

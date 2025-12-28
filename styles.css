@@ -1,0 +1,161 @@
+.testimonial-card {
+    max-width: 700px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+  }
+
+  .testimonial-card blockquote {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 20px 0;
+    color: #333;
+  }
+
+  .testimonial-card .client span {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  .avatar {
+    width: 64px;
+    height: 64px;
+    margin: auto;
+    border-radius: 50%;
+    background: #0dcaf0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    filter: invert(1) brightness(1.2);
+  }
+
+  /* Style for the language switcher */
+  .lang-switcher {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .lang-flag {
+    width: 20px;
+    margin-right: 5px;
+  }
+
+  /* RTL specific adjustments can be added here if needed */
+  html[dir="rtl"] .lang-flag {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+
+
+  /* Add these styles to your existing <style> section */
+
+  /* Scroll animation classes */
+  .scroll-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .scroll-fade-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .scroll-fade-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .scroll-fade.scroll-visible,
+  .scroll-fade-left.scroll-visible,
+  .scroll-fade-right.scroll-visible {
+    opacity: 1;
+    transform: translate(0);
+  }
+
+  /* Stagger delays for better visual effect */
+  .scroll-fade:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+
+  .scroll-fade:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+
+  .scroll-fade:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+
+  /* Top contact info styles - Updated for better layout */
+  /* Contact info in navbar */
+  .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .contact-item:hover {
+    color: #0dcaf0;
+  }
+
+  .contact-item i {
+    color: #0dcaf0;
+    font-size: 0.9rem;
+  }
+
+  .contact-text {
+    font-weight: 500;
+  }
+
+  /* RTL adjustments */
+  html[dir="rtl"] .contact-item {
+    flex-direction: row-reverse;
+  }
+
+  html[dir="rtl"] .contact-item i {
+    margin-right: 0;
+    margin-left: 6px;
+  }
+
+  /* Mobile contact box */
+  .mobile-contact {
+    background: rgba(248, 249, 250, 0.9);
+    border-radius: 8px;
+    padding: 15px;
+  }
+
+  .mobile-contact .contact-info {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .mobile-contact .contact-item {
+    font-size: 0.9rem;
+  }
