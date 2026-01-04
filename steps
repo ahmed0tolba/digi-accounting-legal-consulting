@@ -1,0 +1,11 @@
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ahmed0tolba/digi-accounting-legal-consulting.git
+git push -u origin main
+
+
+https://ahmed0tolba.github.io/digi-accounting-legal-consulting/
+
+git push --force origin main
