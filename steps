@@ -8,4 +8,6 @@ git push -u origin main
 
 https://ahmed0tolba.github.io/digi-accounting-legal-consulting/
 
+git add .
+git commit
 git push --force origin main
